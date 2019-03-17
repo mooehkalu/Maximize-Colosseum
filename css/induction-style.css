@@ -55,21 +55,21 @@ format('embedded-opentype'),url(/templates/fonts/pt_serif-webfont.woff2) format(
  #navlist{position:relative;top:0;z-index:1}
  #navlist li{margin:0;padding:0;list-style:none;display:block}
  #navlist li a{display:block;height:inherit;color:transparent}
- .nav-myhome{background:url(/Users/ehlumoo/Desktop/Max/images/ME-logo.png) no-repeat;height:191px;width:230px}
- .nav-induction{background:url(/Users/ehlumoo/Desktop/Max/images/induction.png) 0 0 no-repeat;height:60px;width:221px}
-   .nav-future{background:url(/Users/ehlumoo/Desktop/Max/images/futureprofile.png) 0 0 no-repeat;height:60px;width:221px}
- .nav-colosseum{background:url(/Users/ehlumoo/Desktop/Max/images/colosseum.png) 0 0 no-repeat;height:65px;width:221px}
- .nav-crusades{background:url(/Users/ehlumoo/Desktop/Max/images/crusades.png) 0 0 no-repeat;height:65px;width:221px}
+ .nav-myhome{background:url(https://github.com/mooehkalu/Maximize-Colosseum/blob/master/images/ME-logo.png) no-repeat;height:191px;width:230px}
+ .nav-induction{background:url(https://github.com/mooehkalu/Maximize-Colosseum/blob/master/images/induction.png) 0 0 no-repeat;height:60px;width:221px}
+   .nav-future{background:url(https://github.com/mooehkalu/Maximize-Colosseum/blob/master/images/futureprofile.png) 0 0 no-repeat;height:60px;width:221px}
+ .nav-colosseum{background:url(https://github.com/mooehkalu/Maximize-Colosseum/blob/master/images/colosseum.png) 0 0 no-repeat;height:65px;width:221px}
+ .nav-crusades{background:url(https://github.com/mooehkalu/Maximize-Colosseum/blob/master/images/crusades.png) 0 0 no-repeat;height:65px;width:221px}
       .nav-community{background:url(/Users/ehlumoo/Desktop/Max/images/community.png) 0 0 no-repeat;height:67px;width:221px}
-   .nav-maximizeu{background:url(/Users/ehlumoo/Desktop/Max/images/maximizeu.png) 0 0 no-repeat;height:67px;width:221px}
-   .nav-faq{background:url(/Users/ehlumoo/Desktop/Max/images/faq.png) 0 0 no-repeat;height:67px;width:221px}
-   .nav-induction:hover{background:url(/Users/ehlumoo/Desktop/Max/images/induction.png) -215px 0 no-repeat;height:60px;width:221px}
-   .nav-future:hover{background:url(/Users/ehlumoo/Desktop/Max/images/futureprofile.png) -215px 0 no-repeat;height:60px;width:221px}
- .nav-colosseum:hover{background:url(/Users/ehlumoo/Desktop/Max/images/colosseum.png) -215px 0 no-repeat;height:65px;width:221px}
- .nav-crusades:hover{background:url(/Users/ehlumoo/Desktop/Max/images/crusades.png) -215px 0 no-repeat;height:65px;width:221px}
-      .nav-community:hover{background:url(/Users/ehlumoo/Desktop/Max/images/community.png) -215px 0 no-repeat;height:67px;width:221px}
-   .nav-maximizeu:hover{background:url(/Users/ehlumoo/Desktop/Max/images/maximizeu.png)-215px 0 no-repeat;height:67px;width:221px}
-   .nav-faq:hover{background:url(/Users/ehlumoo/Desktop/Max/images/faq.png) -215px 0 no-repeat;height:67px;width:221px}
+   .nav-maximizeu{background:url(https://github.com/mooehkalu/Maximize-Colosseum/blob/master/images/maximizeu.png) 0 0 no-repeat;height:67px;width:221px}
+   .nav-faq{background:url(https://github.com/mooehkalu/Maximize-Colosseum/blob/master/images/faq.png) 0 0 no-repeat;height:67px;width:221px}
+   .nav-induction:hover{background:url(https://github.com/mooehkalu/Maximize-Colosseum/blob/master/images/induction.png) -215px 0 no-repeat;height:60px;width:221px}
+   .nav-future:hover{background:url(https://github.com/mooehkalu/Maximize-Colosseum/blob/master/images/futureprofile.png) -215px 0 no-repeat;height:60px;width:221px}
+ .nav-colosseum:hover{background:url(https://github.com/mooehkalu/Maximize-Colosseum/blob/master/images/colosseum.png) -215px 0 no-repeat;height:65px;width:221px}
+ .nav-crusades:hover{background:url(https://github.com/mooehkalu/Maximize-Colosseum/blob/master/images/crusades.png) -215px 0 no-repeat;height:65px;width:221px}
+      .nav-community:hover{background:url(https://github.com/mooehkalu/Maximize-Colosseum/blob/master/images/community.png) -215px 0 no-repeat;height:67px;width:221px}
+   .nav-maximizeu:hover{background:url(https://github.com/mooehkalu/Maximize-Colosseum/blob/master/images/maximizeu.png)-215px 0 no-repeat;height:67px;width:221px}
+   .nav-faq:hover{background:url(https://github.com/mooehkalu/Maximize-Colosseum/blob/master/images/faq.png) -215px 0 no-repeat;height:67px;width:221px}
 
  #menu-nfx{margin-left:0}
  #menu-nfx-1 li.current-menu-item{background-position:-442px 0}
