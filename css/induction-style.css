@@ -55,7 +55,7 @@ format('embedded-opentype'),url(/templates/fonts/pt_serif-webfont.woff2) format(
  #navlist{position:relative;top:0;z-index:1}
  #navlist li{margin:0;padding:0;list-style:none;display:block}
  #navlist li a{display:block;height:inherit;color:transparent}
- .nav-myhome{background:url(../images/colosseum-home.png) no-repeat;height:191px;width:230px}
+ .nav-myhome{background:url(../images/induction-home-logo.png) no-repeat;height:191px;width:230px}
  .nav-induction{background:url(../images/induction.png) 0 0 no-repeat;height:60px;width:221px}
    .nav-future{background:url(../images/futureprofile.png) 0 0 no-repeat;height:60px;width:221px}
  .nav-colosseum{background:url(../images/colosseum.png) 0 0 no-repeat;height:65px;width:221px}
