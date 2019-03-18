@@ -373,7 +373,7 @@ format('embedded-opentype'),url(/templates/fonts/pt_serif-webfont.woff2) format(
  .scrollToTop{position:absolute;bottom:-14px;left:50%;margin-left:-15px;
  z-index:2;cursor:pointer}
  
- .top-banner{left:0;padding:0 5px;position:absolute; width: 80%; height: 150px; top: 40px; left: 70px; z-index:100}
+ .top-banner{left:0;padding:0 5px;position:absolute; width: 90%; height: 150px; top: 40px; left: 40px; z-index:100}
  
  .qh-showhide{position:relative;float:left;width:100%;
  margin-top:16px;background-color:transparent;border-bottom:none;z-index:103;
