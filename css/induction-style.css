@@ -460,9 +460,10 @@ format('embedded-opentype'),url(/templates/fonts/pt_serif-webfont.woff2) format(
  .rank div:first-child{font-size:14px}
  .small-progress 
  .rank div:last-child{font-size:16px;font-weight:700}
+
  .small-progress 
  .xp-line{height:12px;left:182px;position:absolute;
- top:49px;width:140px;z-index:300}
+ top:52px;width:140px;z-index:300}
  .small-progress 
  .xp-line 
  
