@@ -888,7 +888,7 @@ format('embedded-opentype'),url(/templates/fonts/pt_serif-webfont.woff2) format(
 box-shadow:         0px 0px 30px 0px rgba(255,219,0, 0.8);
 }
 
-.vault-image{ 
+.vault-image:hover{ 
   -webkit-box-shadow: 0px 0px 30px 0px rgba(255,180,0, 0.8);
  -moz-box-shadow:0px 0px 30px 0px rgba(255,180,0, 0.8);
   -moz-box-shadow: 0px 0px 30px 0px rgba(255,180,0, 0.8);
