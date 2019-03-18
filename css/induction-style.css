@@ -887,6 +887,13 @@ format('embedded-opentype'),url(/templates/fonts/pt_serif-webfont.woff2) format(
 -moz-box-shadow:    0px 0px 30px 0pxrgba(255,219,0, 0.8);
 box-shadow:         0px 0px 30px 0px rgba(255,219,0, 0.8);
 }
+
+.vault-image{ 
+  -webkit-box-shadow: 0px 0px 30px 0px rgba(255,180,0, 0.8);
+ -moz-box-shadow:0px 0px 30px 0px rgba(255,180,0, 0.8);
+  -moz-box-shadow: 0px 0px 30px 0px rgba(255,180,0, 0.8);
+}
+
  .vault-image span{font-size:56px;letter-spacing:8px;text-shadow:0 0 8px #000;top:30px;position:relative}
  .vault-image b{font-size:70px}
  .menu-item-720565,
