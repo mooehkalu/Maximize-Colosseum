@@ -350,6 +350,34 @@ format('embedded-opentype'),url(/templates/fonts/pt_serif-webfont.woff2) format(
  .small-progress{margin-right:-232px;right:50%}
  .mobile-progress{display:none;height:100px;left:0;
  top:0;width:100%;z-index:1000}
+
+.small-progress .level {
+    color: #ebdc9f;
+    font-family: pt_sansbold,sans-serif;
+    font-size: 22px;
+    left: 149px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    line-height: 1;
+    width: 40px;
+    z-index: 200;
+    font-weight: 600;
+}
+div#sound_off_checkbox {
+    position: absolute;
+    top: 28px;
+    right: 110px;
+    display: block;
+    width: 15px;
+    opacity: .4;
+    line-height: 25px;
+    z-index: 999;
+    color: #f7ac61;
+    font-size: 24px;
+    cursor: pointer;
+}
+
  .small-progress img{position:absolute;z-index:100;top:0;left:0;width:100%;
  height:auto}
  .small-progress a{color:#d7a856}
@@ -440,17 +468,34 @@ format('embedded-opentype'),url(/templates/fonts/pt_serif-webfont.woff2) format(
  .bg-xp-bar{position:absolute;z-index:100}
 
 
- .small-progress 
- .person-image{height:120px;left:47px;
- position:absolute;top:3px;width:150px;z-index:300;text-align:center;color:transparent}
+ .small-progress .person-image {
+    height: 120px;
+    left: 65px;
+    position: absolute;
+    top: 3px;
+    width: 150px;
+    z-index: 300;
+    text-align: center;
+    color: transparent;
+}
+
  .small-progress 
  .person-image img{width:76px!important;height:auto!important;top:19px;left:22px}
  .class_icon{text-align:center!important}
  .gen_thumbs p{display:none!important}
 
- .small-progress 
- .person{color:#d7a856;font-family:pt_serifregular,sans-serif;
- font-size:20px;font-weight:600;left:142px;position:absolute;top:15px;z-index:200;width:235px;text-align:center}
+.small-progress .person {
+    color: #d7a856;
+    font-family: pt_serifregular,sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    left: 120px;
+    position: absolute;
+    top: 22px;
+    z-index: 200;
+    width: 235px;
+    text-align: center;
+}
  .small-progress 
  .rank{position:absolute;right:68px;top:51px;width:40px;z-index:200}
  .small-progress 
@@ -461,12 +506,17 @@ format('embedded-opentype'),url(/templates/fonts/pt_serif-webfont.woff2) format(
  .small-progress 
  .rank div:last-child{font-size:16px;font-weight:700}
 
- .small-progress 
- .xp-line{height:12px;left:182px;position:absolute;
- top:53px;width:140px;z-index:300}
+ .small-progress .xp-line {
+    height: 12px;
+    left: 190px;
+    position: absolute;
+    top: 51px;
+    width: 140px;
+    z-index: 300;
+}
+
  .small-progress 
  .xp-line 
- 
  .xp-progress{background:url(../images/small-xp-progress-bar-red-repeat.png);
  height:100%}
  .small-progress 
