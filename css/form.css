@@ -1,7 +1,7 @@
 
 
 .induction-form-container {
-	max-width:400px;
+	max-width:500px;
 	width:100%;
 	margin:0 auto;
 	position:relative;
@@ -10,7 +10,7 @@
 
 
 #contact {
-	background:#ccc;
+	background: transparent;
 	padding:25px;
 	margin:50px 0;
 }
