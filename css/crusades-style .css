@@ -425,17 +425,7 @@ format('embedded-opentype'),url(/templates/fonts/pt_serif-webfont.woff2) format(
  .quest-block{margin-bottom:40px}
  .quests-bread span{color:#666}.quest-cats img{width:50px;position:relative;z-index:2;
  -webkit-filter:drop-shadow(0px 0px 0px rgba(0,0,0,0.3));transition:all .3s linear}
- .quest-cats img:hover{-webkit-filter:drop-shadow(0px 0px 8px rgba(0,0,0,0.6))}
- .quest-cats span{padding:8px 10px;
- position:absolute;width:90%;left:10%;top:5px;text-align:center;padding-left:30px;
  
- background-image:url(https://nerdfitness.com/wp-content/themes/NerdFitness/wp-content/themes/NerdFitness/templates/images/graphics-00068.png);
- background-size:cover;color:#e6e6e6;font-weight:700;padding-top:13px}
- .quest-cats 
- .col-sm-2{padding:0;white-space:nowrap;
- cursor:pointer}.quest-cats .col-sm-2.active span{
- background-image:url(https://nerdfitness.com/wp-content/themes/NerdFitness/wp-content/themes/NerdFitness/templates/images/graphics-00086.png);
- color:#ffde8d}
  .xp-bar{height:125px;left:50%;margin-left:-177px;position:absolute;top:-28px;
  width:354px;z-index:100}
  .bg-xp-bar{position:absolute;z-index:100}
