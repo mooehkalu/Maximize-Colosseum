@@ -324,63 +324,39 @@ INDUCTION
 <div class="cont-wrap" style="display: block">
 <h2>Induction Form</h2>
 <div class="user_story">
-<p>  <h1>Contact Form</h1> 
 
-    <form method="POST" action="#" class="form-horizontal" id="contact-form">
-        <div class="control-group">
-            <label class="control-label" for="name">Name</label>
-            <div class="controls">
-                <input type="text" name="name" id="name" placeholder="Your name">
-            </div>
-        </div>
-        <div class="control-group">
-            <label class="control-label" for="email">Email</label>
-            <div class="controls">
-                <input type="text" name="email" id="email" placeholder="Your email address">
-            </div>
-        </div>
-       
-             <div class="control-group">
-            <label class="control-label" for="phone">Pnone</label>
-            <div class="controls">
-                <input type="text" name="phone" id="phone" placeholder="Your Phone Number">
-            </div>
-        </div>
-        <div class="control-group">
-            <label class="control-label" for="date">Birthday</label>
-            <div class="controls">
-                <input type="date" name="date" id="date" placeholder="Your birthday">
-            </div>
-        </div>
-       
-            <div class="control-group">
-            <label class="control-label" for="job">Job</label>
-            <div class="controls">
-                <input type="text" name="job" id="job" placeholder="Your future job">
-            </div>
-        </div>
-        <div class="control-group">
-            <label class="control-label" for="company">Company</label>
-            <div class="controls">
-                <input type="text" name="company" id="company" placeholder="Your future cpmpany">
-            </div>
-        </div>
-       
-             <div class="control-group">
-            <label class="control-label" for="charater">Charater</label>
-            <div class="controls">
-                <input type="text" name="charater" id="charater" placeholder="Your  charater">
-            </div>
-        </div>
+<div class="induction-form-container">  
+  <form id="contact" action="" method="post">
 
-        <div class="form-actions">
-            <input type="hidden" name="save" value="contact">
-            <button type="submit" class="btn btn-success">Submit Message</button>
-            <button type="reset" class="btn">Cancel</button>
-        </div>
-    </form>
+    <fieldset>
+      <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your Email Address" type="email" tabindex="2" required>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your Phone Number" type="tel" tabindex="3" required>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your birthday" type="text" tabindex="4" required>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your future job" type="text" tabindex="5" required>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your future company" type="text" tabindex="6" required>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your charater name" type="text" tabindex="7" required>
+    </fieldset>
+    
+    <fieldset>
+      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+    </fieldset>
+  </form>
 </div>
-</div></p>
+</div>
+</div>
 <div class="cont-desc" style="display: none">
 <h2>Induction Form</h2>
 </div>
@@ -796,50 +772,7 @@ float: left;
 
 </style>
 <script>
-$(document).ready(function () {
 
-    $('#contact-form').validate({
-        rules: {
-            name: {
-                minlength: 2,
-                required: true
-            },
-            email: {
-                required: true,
-                email: true
-            },
-            phone: {
-                minlength: true,
-                required: true
-            },
-            
-             date: {
-                minlength: true,
-                required: true
-            },
-            job: {
-                minlength: true,
-                required: true
-            },
-            company: {
-                minlength: true,
-                required: true
-            },
-            charater: {
-                minlength: true,
-                required: true
-            }
-            },
-        highlight: function (element) {
-            $(element).closest('.control-group').removeClass('success').addClass('error');
-        },
-        success: function (element) {
-            element.text('OK!').addClass('valid')
-                .closest('.control-group').removeClass('error').addClass('success');
-        }
-    });
-
-});
 </script>
 </footer>
 <script type="text/javascript" src="https://a.optmnstr.com/app/js/api.min.js" data-campaign="jo8gkjx4yq069i2sb0ec" data-user="47412" data-env="production"></script><script type="text/javascript" src="https://a.optmnstr.com/app/js/api.min.js" data-campaign="uvmeftupxwbsxx5bfali" data-user="47412" data-env="production"></script><script type="text/javascript" src="https://a.optmnstr.com/app/js/api.min.js" data-campaign="yqng8mb9dyag2looo577" data-user="47412" data-env="production"></script><script type="text/javascript" src="https://a.optmnstr.com/app/js/api.min.js" data-campaign="nolrux7pvqswvgjeoc3e" data-user="47412" data-env="production"></script><script type="text/javascript" src="https://a.optmnstr.com/app/js/api.min.js" data-campaign="ahwuiqmvskpchmx6sih7" data-user="47412" data-env="production"></script><script type="text/javascript" src="https://a.optmnstr.com/app/js/api.min.js" data-campaign="yvw0hpb6dzhy5sj8ctic" data-user="47412" data-env="production"></script><script type="text/javascript" src="https://a.optmnstr.com/app/js/api.min.js" data-campaign="osl7frtsrjl1quzwrpa9" data-user="47412" data-env="production"></script><script type="text/javascript" src="https://a.optmnstr.com/app/js/api.min.js" data-campaign="ucx50wrmz7nlszvwm4eh" data-user="47412" data-env="production"></script> <script type="text/javascript">
