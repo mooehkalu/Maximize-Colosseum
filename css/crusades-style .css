@@ -429,9 +429,11 @@ format('embedded-opentype'),url(/templates/fonts/pt_serif-webfont.woff2) format(
  .xp-bar{height:125px;left:50%;margin-left:-177px;position:absolute;top:-28px;
  width:354px;z-index:100}
  .bg-xp-bar{position:absolute;z-index:100}
+ 
  .small-progress 
  .person-image{height:120px;left:44px;
  position:absolute;top:-6px;width:120px;z-index:300;text-align:center;color:transparent}
+ 
  .small-progress 
  .person-image img{width:76px!important;height:auto!important;top: 30px;left: 43px;}
  .class_icon{text-align:center!important}
