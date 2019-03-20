@@ -430,12 +430,6 @@ format('embedded-opentype'),url(/templates/fonts/pt_serif-webfont.woff2) format(
  width:354px;z-index:100}
  .bg-xp-bar{position:absolute;z-index:100}
  
- .small-progress 
- .person-image{height:120px;left:65px;
- position:absolute;top:5px;width:120px;z-index:300;text-align:center;color:transparent}
- 
- .small-progress 
- .person-image img{width:76px!important;height:auto!important;top: 19px;left: 22px;}
  .class_icon{text-align:center!important}
  .gen_thumbs p{display:none!important}
  .small-progress 
