@@ -631,8 +631,10 @@ div#sound_off_checkbox {
 
 .character-progress 
  .person-image{height:auto;left:-23px;position:absolute;top:-18px;width:155px;z-index:200;
- text-align:center;color:transparent}.character-progress .person-image img{height:auto;
- left:28px;position:absolute;top:23px;width:99px}.character-progress 
+ text-align:center;color:transparent}
+
+.character-progress .person-image img{height:auto;
+ left:28px;position:absolute;top:33px;width:99px}.character-progress 
  .character-progress-img{position:absolute;z-index:100;width:100%;
  height:auto;top:0;left:0}
 
