@@ -4,7 +4,7 @@
     position: absolute;
     width: 100%;
     height: 150px;
-    top: 180px;
+    top: 680px;
     z-index: 100;
 }
 
@@ -16,7 +16,7 @@
     left: 0;
     position: absolute;
     top: 115px;
-    width: 400px;
+    width: 755px;
     z-index: 300;
 }
 
