@@ -228,7 +228,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="col-sm-3 nav-bar-cont">
 <ul id="navlist">
 <ul id="menu-nfx-1" class="menu"><li class="nav-myhome menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-99762"><a href="https://mooehkalu.github.io/Maximize-Colosseum/index.html">Home</a></li>
-<li class="nav-induction menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-30056 current_page_item menu-item-99765"><a href="https://github.com/mooehkalu/Maximize-Colosseum/index.html">Induction</a></li>
+<li class="nav-induction menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-30056 current_page_item menu-item-99765"><a href="https://mooehkalu.github.io/Maximize-Colosseum/index.html">Induction</a></li>
 <li class="nav-future menu-item menu-item-type-post_type menu-item-object-page menu-item-1033871"><a href="https://mooehkalu.github.io/Maximize-Colosseum/futureprofile.html">Future Profile</a></li>
 <li class="nav-colosseum menu-item menu-item-type-post_type menu-item-object-page menu-item-1033871"><a href="https://mooehkalu.github.io/Maximize-Colosseum/colosseum.html">Colosseum</a></li>
 <li class="nav-crusades menu-item menu-item-type-post_type menu-item-object-page menu-item-1033871"><a href="https://mooehkalu.github.io/Maximize-Colosseum/crusades.html">Crusades</a></li>
@@ -671,9 +671,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
  font-weight:700;border-radius:8px}.quest-head img{height:70px;float:left;vertical-align:middle;display:inline-block}
  .quest-head .qh-rect img{float:right;position:relative;margin-top:-12px;margin-right:-35px}
  .quest-block{margin-bottom:40px}
- .quests-bread span{color:#666}.quest-cats img{width:50px;position:relative;z-index:2;
+ .quests-bread span{color:#666}
+.quest-cats img{width:110px;position:relative;z-index:2;
  -webkit-filter:drop-shadow(0px 0px 0px rgba(0,0,0,0.3));transition:all .3s linear}
- .quest-cats img:hover{-webkit-filter:drop-shadow(0px 0px 8px rgba(0,0,0,0.6))}
+	
+ .quest-cats img:hover{background-color: #ccc; -webkit-filter:drop-shadow(0px 0px 8px rgba(0,0,0,0.6))}
  .quest-cats span{padding:8px 10px;
  position:absolute;width:90%;left:10%;top:5px;text-align:center;padding-left:30px;
  
@@ -702,9 +704,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
  .rank div:first-child{font-size:14px}
  .small-progress 
  .rank div:last-child{font-size:16px;font-weight:700}
- .small-progress 
- .xp-line{height:12px;left:182px;position:absolute;
- top:49px;width:140px;z-index:300}
+	
+ .small-progress .xp-line {
+    height: 12px;
+    left: 190px;
+    position: absolute;
+    top: 51px;
+    width: 140px;
+    z-index: 300;
+}
+	
  .small-progress 
  .xp-line 
  
@@ -1224,7 +1233,6 @@ float: left;
     top: 5px;
     text-align: center;
     padding-left: 30px;
-    background-image: url(https://www.nerdfitness.com/wp-content/themes/NerdFitness/templates/images/graphics-00086.png);
     background-size: cover;
     color: #e6e6e6;
     font-size: 10px;
@@ -2685,50 +2693,50 @@ border:1px solid #ccc;
 <img class="bg-progress-big" src="images/crusades_dashboard/crusades-dashboard.png" alt="progress-bar">
 <div class="quest-cats" id="alm-filter-nav">
 <div data-id="all" class="col-sm-2 col-xs-6 active"><div id="all_quests" data-repeater="template_2" data-scroll="true" data-post-type="nfq_quest" data-posts-per-page="15" data-max-pages="100" data-taxonomy="nfq_quest_category" data-taxonomy-terms="adventurer,assassin,druid,monk,ranger,rebel,scout,warrior" data-post--in="" data-search="">
-<img src="images/archetype_guild/ArchetypeButtonALL.png"><span>All</span></div></div>
+<img src="images/archetype_guild/ArchetypeGuildButtonAll.png"></div></div>
 
-<div data-id="academy" class="col-sm-2 col-xs-6"><div data-repeater="default" data-post-type="nfq_quest" data-posts-per-page="15" data-max-pages="100" data-taxonomy="nfq_quest_category" data-taxonomy-terms="academy" data-post--in="" data-search=""><img src="images/archetype_guild/ArchetypeButtonColiseum.png">
-<span>Colosseum</span>
+<div data-id="academy" class="col-sm-2 col-xs-6"><div data-repeater="default" data-post-type="nfq_quest" data-posts-per-page="15" data-max-pages="100" data-taxonomy="nfq_quest_category" data-taxonomy-terms="academy" data-post--in="" data-search=""><img src="images/archetype_guild/ArchetypeGuildButtonColosseum.png">
+
 </div></div>
 
 
-<div data-id="adventurer" class="col-sm-2 col-xs-6"><div data-repeater="default" data-post-type="nfq_quest" data-posts-per-page="15" data-max-pages="100" data-taxonomy="nfq_quest_category" data-taxonomy-terms="adventurer" data-post--in="" data-search=""><img src="images/archetype_guild/ArchetypeButtonEntertainment.png">
-<span>Entertainment</span>
+<div data-id="adventurer" class="col-sm-2 col-xs-6"><div data-repeater="default" data-post-type="nfq_quest" data-posts-per-page="15" data-max-pages="100" data-taxonomy="nfq_quest_category" data-taxonomy-terms="adventurer" data-post--in="" data-search=""><img src="images/archetype_guild/ArchetypeGuildButtonEntertain.png">
+
 </div></div>
 
 
-<div data-id="assassin" class="col-sm-2 col-xs-6"><div data-repeater="default" data-post-type="nfq_quest" data-posts-per-page="15" data-max-pages="100" data-taxonomy="nfq_quest_category" data-taxonomy-terms="assassin" data-post--in="" data-search=""><img src="images/archetype_guild/ArchetypeButtonEntreprenuer.png">
-<span>Entreprenuer</span>
+<div data-id="assassin" class="col-sm-2 col-xs-6"><div data-repeater="default" data-post-type="nfq_quest" data-posts-per-page="15" data-max-pages="100" data-taxonomy="nfq_quest_category" data-taxonomy-terms="assassin" data-post--in="" data-search=""><img src="images/archetype_guild/ArchetypeGuildButtonEntrepreneur.png">
+
 </div></div>
 
 
-<div data-id="camp" class="col-sm-2 col-xs-6"><div data-repeater="default" data-post-type="nfq_quest" data-posts-per-page="15" data-max-pages="100" data-taxonomy="nfq_quest_category" data-taxonomy-terms="camp" data-post--in="" data-search=""><img src="images/archetype_guild/ArchetypeButtonNonProfit.png">
-<span>NonProfit</span>
+<div data-id="camp" class="col-sm-2 col-xs-6"><div data-repeater="default" data-post-type="nfq_quest" data-posts-per-page="15" data-max-pages="100" data-taxonomy="nfq_quest_category" data-taxonomy-terms="camp" data-post--in="" data-search=""><img src="images/archetype_guild/ArchetypeGuildButtonNonProfit.png">
+
 </div></div>
 
 
-<div data-id="druid" class="col-sm-2 col-xs-6"><div data-repeater="default" data-post-type="nfq_quest" data-posts-per-page="15" data-max-pages="100" data-taxonomy="nfq_quest_category" data-taxonomy-terms="druid" data-post--in="" data-search=""><img src="images/archetype_guild/ArchetypeButtonRealEstate.png">
-<span>RealEstate</span>
+<div data-id="druid" class="col-sm-2 col-xs-6"><div data-repeater="default" data-post-type="nfq_quest" data-posts-per-page="15" data-max-pages="100" data-taxonomy="nfq_quest_category" data-taxonomy-terms="druid" data-post--in="" data-search=""><img src="images/archetype_guild/ArchetypeGuildButtonRealEstate.png">
+
 </div></div>
 
 
-<div data-id="monk" class="col-sm-2 col-xs-6"><div data-repeater="default" data-post-type="nfq_quest" data-posts-per-page="15" data-max-pages="100" data-taxonomy="nfq_quest_category" data-taxonomy-terms="monk" data-post--in="" data-search=""><img src="images/archetype_guild/ArchetypeButtonRecruit.png">
-<span>Recruit</span>
+<div data-id="monk" class="col-sm-2 col-xs-6"><div data-repeater="default" data-post-type="nfq_quest" data-posts-per-page="15" data-max-pages="100" data-taxonomy="nfq_quest_category" data-taxonomy-terms="monk" data-post--in="" data-search=""><img src="images/archetype_guild/ArchetypeGuildButtonRecruit.png">
+
 </div></div>
 
 
-<div data-id="ranger" class="col-sm-2 col-xs-6"><div data-repeater="default" data-post-type="nfq_quest" data-posts-per-page="15" data-max-pages="100" data-taxonomy="nfq_quest_category" data-taxonomy-terms="ranger" data-post--in="" data-search=""><img src="images/archetype_guild/ArchetypeButtonRetail.png">
-<span>Retail</span>
+<div data-id="ranger" class="col-sm-2 col-xs-6"><div data-repeater="default" data-post-type="nfq_quest" data-posts-per-page="15" data-max-pages="100" data-taxonomy="nfq_quest_category" data-taxonomy-terms="ranger" data-post--in="" data-search=""><img src="images/archetype_guild/ArchetypeGuildButtonRetail.png">
+
 </div></div>
 
 
-<div data-id="rebel" class="col-sm-2 col-xs-6"><div data-repeater="default" data-post-type="nfq_quest" data-posts-per-page="15" data-max-pages="100" data-taxonomy="nfq_quest_category" data-taxonomy-terms="rebel" data-post--in="" data-search=""><img src="images/archetype_guild/ArchetypeButtonSecurities.png">
-<span>Securities</span>
+<div data-id="rebel" class="col-sm-2 col-xs-6"><div data-repeater="default" data-post-type="nfq_quest" data-posts-per-page="15" data-max-pages="100" data-taxonomy="nfq_quest_category" data-taxonomy-terms="rebel" data-post--in="" data-search=""><img src="images/archetype_guild/ArchetypeGuildButtonSecurities.png">
+
 </div></div>
 
 
-<div data-id="scout" class="col-sm-2 col-xs-6"><div data-repeater="default" data-post-type="nfq_quest" data-posts-per-page="15" data-max-pages="100" data-taxonomy="nfq_quest_category" data-taxonomy-terms="scout" data-post--in="" data-search=""><img src="images/archetype_guild/ArchetypeButtonSelfHelp.png">
-<span>SelfHelp</span>
+<div data-id="scout" class="col-sm-2 col-xs-6"><div data-repeater="default" data-post-type="nfq_quest" data-posts-per-page="15" data-max-pages="100" data-taxonomy="nfq_quest_category" data-taxonomy-terms="scout" data-post--in="" data-search=""><img src="images/archetype_guild/ArchetypeGuildButtonPersonalGrowth.png">
+
 </div></div>
 
 
@@ -3259,7 +3267,7 @@ This content will be dynamically filled.
 <div class="row">
 <div class="col-sm-8 col-sm-offset-2">
 <p class="footer-text">
-2019 Nerd Fitness. All rights Reserved. <a href="/terms-and-conditions/" target="_blank">Terms and Conditions</a>
+2020 Nerd Fitness. All rights Reserved. <a href="/terms-and-conditions/" target="_blank">Terms and Conditions</a>
 </p>
 </div>
 </div>

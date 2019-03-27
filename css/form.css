@@ -1,3 +1,24 @@
+.top-banner-form {
+    left: 0;
+    padding: 0 5px;
+    position: absolute;
+    width: 110%;
+    height: 150px;
+    top: 680px;
+    z-index: 100;
+}
+
+.induction-title-form {
+    color: #404040;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 400;
+    left: 0;
+    position: absolute;
+    top: 755px;
+    width: 400px;
+    z-index: 300;
+}
 
 
 .induction-form-container {
