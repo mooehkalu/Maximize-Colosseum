@@ -253,7 +253,7 @@ format('embedded-opentype'),url(/templates/fonts/pt_serif-webfont.woff2) format(
  
  .nfx-epic-quest-wrap 
  .fx-inner-cont{padding:20px;border-top:1px solid #999;border-bottom:1px solid #999;margin-left:10%;margin-right:10%;margin-top:190px;
- background-image:linear-gradient(to bottom,#CBC8C7 0%,#E6E3E1 30%,#E6E3E1 60%,#CBC8C7 100%)}
+ background-image:none;}
  .nfx-epic-quest-wrap 
  .fx-inner-cont h2{font-size:18px;font-family:tisasanspro-bold,sans-serif;
  margin-top:0}
