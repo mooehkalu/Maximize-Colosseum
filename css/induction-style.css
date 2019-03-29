@@ -409,7 +409,7 @@ div#sound_off_checkbox {
  .scrollToTop{position:absolute;bottom:-14px;left:50%;margin-left:-15px;
  z-index:2;cursor:pointer}
  
- .top-banner{left:0;padding:0 5px;position:absolute; width: 90%; height: 150px; top: 40px; left: 40px; z-index:100}
+ .top-banner{left:0;padding:0 5px;position:absolute; width: 100%; height: 150px; top: 40px; z-index:100}
  
  .qh-showhide{position:relative;float:left;width:100%;
  margin-top:16px;background-color:transparent;border-bottom:none;z-index:103;
@@ -1073,7 +1073,7 @@ box-shadow:         0px 0px 30px 0px rgba(255,219,0, 0.8);
  .nfx-epic-quest-wrap 
  .fx-inner-cont{margin-left:0;margin-right:0}
  
- .top-banner{left:0;padding:0 5px;position:absolute; width: 80%; height: 150px; margin-top: 90px; left: 70px; z-index:100}
+ .top-banner{left:0;padding:0 5px;position:absolute; width: 100%; height: 150px; margin-top: 90px;  z-index:100}
 
  .nfx-epic-quest-wrap 
  .fx-inner-sections{padding:0}
@@ -1254,12 +1254,12 @@ box-shadow:         0px 0px 30px 0px rgba(255,219,0, 0.8);
  @media only screen and (min-width:768px) and (max-width:799px){
  .quest-cats span{background-size:100% 100%}
  
- .top-banner{left:0;padding:0 5px;position:absolute; width: 80%; height: 140px; margin-top: 100px; left: 80px; z-index:100}
+ .top-banner{left:0;padding:0 5px;position:absolute; width: 100%; height: 140px; margin-top: 100px;  z-index:100}
 
  .quest-body-block img{margin-left:auto;margin-right:auto;display:block}}
  @media only screen and (max-width:768px){
  
- .top-banner{left:0;padding:0 5px;position:absolute; width: 80%; height: 90px; margin-top: -140px; left: 40px; z-index:100}
+ .top-banner{left:0;padding:0 5px;position:absolute; width: 100%; height: 90px; margin-top: -140px; z-index:100}
 
 .induction-title {
  color:#404040;font-size:24px;font-weight:40; left:110px;
@@ -1402,7 +1402,7 @@ box-shadow:         0px 0px 30px 0px rgba(255,219,0, 0.8);
  position:absolute;top:-140px;width:10px;z-index:300
  }
  
- .top-banner{left:0;padding:0 5px;position:absolute; width: 90%; height: 90px; margin-top: -140px; left: 20px; z-index:100}
+ .top-banner{left:0;padding:0 5px;position:absolute; width: 100%; height: 90px; margin-top: -140px;z-index:100}
 
  .vault-image span{font-size:40px!important}
   .vault-image{width:140px;height:100px; margin-left: 170px;top:-20px!importtant}
