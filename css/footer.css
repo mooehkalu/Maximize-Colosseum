@@ -1,0 +1,55 @@
+﻿/* footer */
+
+footer.page-footer {
+bottom: 0;
+    color: #ccc;
+}
+
+
+.font-small {
+font-size: 1.6rem;
+}
+
+.teal {
+ background-image: url("images/footer/footer-image.png");
+    
+background-color: #000000;
+	    
+background-position: bottom;
+    
+background-repeat: no-repeat;
+    
+background-size: cover;
+}
+
+.pt-4, .py-4 {
+    padding-top: 1.8rem;
+}
+
+article, aside, figcaption, figure, footer, hgroup, main, section {
+display: block;
+}
+*, ::after, ::before {box-sizing: border-box;
+}
+
+footer.page-footer .footer-copyright {
+overflow: hidden;
+background-color: #514c4400;
+color: rgba(255, 255, 255, 0.63);
+    
+border-top: 1px solid gray;
+}
+
+.text-center {
+text-align: center!important;
+}
+
+.pb-3, .py-3 {
+padding-bottom: 2rem!important;
+}
+
+.pt-3, .py-3 {
+ padding-top: 2rem!important;
+}
+
+/* end footer */
