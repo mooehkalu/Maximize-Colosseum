@@ -180,7 +180,7 @@ format('embedded-opentype'),url(/templates/fonts/pt_serif-webfont.woff2) format(
  font-weight:700;font-size:16px;margin-bottom:10px}
  .nfx-camp-callout.unpurchased .desc{font-family:'pt serif',serif;color:#c73737;font-size:19px;font-weight:700}
  
- .fx-content-page{padding-top:50px;padding-left:50px;padding-right:50px}
+ .fx-content-page{padding-top:50px;padding-left:80px;padding-right:80px}
  
  .nf-title-page{background:#404040;color:#d7a856;min-height: 170px;
     padding: 10px 50px;
