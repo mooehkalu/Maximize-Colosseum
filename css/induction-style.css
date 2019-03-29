@@ -1386,8 +1386,8 @@ color: #404040;
  @media only screen and (min-width:450px) and (max-width:595px){
  
  .induction-title {
- color:#404040;font-size:24px;font-weight:40; left:100px;
- position:absolute;top:-140px;width:10px;z-index:300
+ color:#404040;font-size:24px;font-weight:40; left:140px;
+ position:absolute;top:-143px;width:10px;z-index:300
  }
   .vault-image{width:140px;height:100px;margin-left: 320px;top:-210px;}
  .vault-image span{font-size:28px}
