@@ -4,9 +4,16 @@ footer.page-footer {
 bottom: 0;
     color: #ccc;
 }
+
+footer.page-footer .footer-copyright {
+    overflow: hidden;
+    background-color: #514c4400;
+    color: rgba(255, 255, 255, 0.63);
+    border-top: 1px solid #cecece1a;
+}
+
 footer.page-footer a{color: #c73737;}
 footer.page-footer a:hover{color: #d7a856;}
-
 
 .font-small {
 font-size: 1.6rem;
@@ -32,14 +39,6 @@ article, aside, figcaption, figure, footer, hgroup, main, section {
 display: block;
 }
 *, ::after, ::before {box-sizing: border-box;
-}
-
-footer.page-footer .footer-copyright {
-overflow: hidden;
-background-color: #514c4400;
-color: rgba(255, 255, 255, 0.63);
-    
-border-top: 1px solid gray;
 }
 
 .text-center {
