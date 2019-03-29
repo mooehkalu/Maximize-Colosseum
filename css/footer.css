@@ -12,8 +12,8 @@ footer.page-footer .footer-copyright {
     border-top: 1px solid #cecece1a;
 }
 
-footer.page-footer a{color: grey;}
-footer.page-footer a:hover{color: #d7a856;}
+footer.page-footer a{color: #d7a856;}
+footer.page-footer a:hover{color: #c73737;}
 
 .font-small {
 font-size: 1.6rem;
