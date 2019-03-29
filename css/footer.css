@@ -4,6 +4,8 @@ footer.page-footer {
 bottom: 0;
     color: #ccc;
 }
+footer.page-footer a{color: #c73737;}
+footer.page-footer a:hover{color: #d7a856;}
 
 
 .font-small {
