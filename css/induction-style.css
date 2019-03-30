@@ -262,8 +262,88 @@ format('embedded-opentype'),url(/templates/fonts/pt_serif-webfont.woff2) format(
  .nfx-epic-quest-wrap 
  .fx-inner-sections{margin-top:50px;padding:0 20px 0 60px}
 
+/* saving by category sections */
+.saving-box-title-offset{
+     width: 17%;
+}
 
- .saving-box{
+.col-half-offset{
+border: 1px solid white;
+     width: 20%;
+}
+
+
+.col-xs-2{
+    background: orange;
+    color:#FFF;
+    text-align: left;
+   
+}
+.col-xs-3{
+    background: red;
+    color:#FFF;
+    text-align: left;
+   
+}
+.col-xs-4{
+    background: green;
+    color:#FFF;
+    text-align: left;
+   
+}
+.col-xs-5{
+    background: blue;
+    color:#FFF;
+    text-align: left;
+   
+}
+.col-xs-6{
+    background: none;
+    color:#FFF;
+    text-align: left;
+   
+}
+.col-xs-7{
+    background: none;
+    color:#FFF;
+    text-align: left;
+   
+}
+
+.col-xs-8{
+    background: none;
+    color:#FFF;
+    text-align: left;
+   
+}
+
+.col-xs-9{
+    background: none;
+    color:#FFF;
+    text-align: left;
+   
+}
+
+.col-xs-10{
+    background: none;
+    color:#FFF;
+    text-align: left;
+   
+}
+
+.col-xs-11{
+    background: none;
+    color:#FFF;
+    text-align: left;
+   
+}
+
+.saving-by-category{
+float: left;
+}
+
+
+.saving-box{
 width: 60%;
 margin-left: 120px;
 }
@@ -273,7 +353,7 @@ margin-left: 120px;
 }
 
 
- .saving-category-title{
+.saving-category-title{
     background: 0 0;
     color: #d7b756;
     font-family: pt_serifregular,sans-serif;
