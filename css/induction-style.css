@@ -1423,8 +1423,8 @@ color: #404040;
  .container{max-width:310px}
  
  .induction-title {
- color:#404040;font-size:22px;font-weight:40; left:135px;
- position:absolute;top:-140px;width:10px;z-index:300
+ color:#404040;font-size:22px;font-weight:40; left:0;
+ position:absolute;top:-140px;width:100%;z-index:300
  }
  
  .top-banner{left:0;padding:0 5px;position:absolute; width: 100%; height: 90px; margin-top: -140px;z-index:100}
