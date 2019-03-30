@@ -578,7 +578,14 @@ div#sound_off_checkbox {
  .checkbox-public:checked+label:before{background:#9fd468}
  .checkbox-public:checked+label:after{left:26px}
  .checkbox-public:focus+label:before{box-shadow:0 0 0 3px rgba(255,255,0,.5)}
- .nf-char-img,.nf-char-info{position:relative;z-index:1}.char-img{margin-left:41px}
+
+ .nf-char-img,.nf-char-info{position:relative;z-index:1}
+
+.char-img{
+    width: 499px;
+    margin-left: 41px;
+    height: 430px;
+}
 
  .flag-img{width:100%; height: 430px;}
 
