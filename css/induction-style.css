@@ -1112,8 +1112,19 @@ box-shadow:         0px 0px 30px 0px rgba(255,219,0, 0.8);
  .container-fluid>.navbar-collapse{margin-right:-15px!important;margin-left:-15px!important}
  .nf-char-info-cont{width:100%}.bg-bottom-cont{bottom:-10px}}
   
- @media only screen and (max-width:991px){.nf-header-top{height:auto}
- 
+ @media only screen and (max-width:991px){
+  .nf-header-top{height:auto}
+  
+ .saving-box{
+width: 75%;
+margin-left: -25px;
+}
+.saving-box-title{
+width: 90%;
+margin-left: -30px;
+}
+
+  
  .nf-title-page{background:#404040;color:#d7a856;min-height: 130px;
     padding: 10px 50px;
     position: absolute;
