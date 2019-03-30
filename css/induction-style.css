@@ -1398,7 +1398,7 @@ color: #404040;
  color:#404040;font-size:24px;font-weight:40; left:140px;
  position:absolute;top:-143px;width:10px;z-index:300
  }
-  .vault-image{width:140px;height:100px;margin-left: 320px;top:-160px;}
+  .vault-image{width:140px;height:100px;margin-left: 320px;top:-210px;}
  .vault-image span{font-size:28px}
  .vault-image b{font-size:35px}
  
@@ -1427,7 +1427,7 @@ color: #404040;
  .top-banner{left:0;padding:0 5px;position:absolute; width: 100%; height: 90px; margin-top: -140px;z-index:100}
 
  .vault-image span{font-size:40px!important}
-  .vault-image{width:50px;height:50px; margin-left: 259px;top:-20px!importtant}
+  .vault-image{width:50px;height:50px; margin-left: 259px;top:-160px!importtant}
  .vault-image b{font-size:48px!important}
  
  
