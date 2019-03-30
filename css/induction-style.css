@@ -1443,6 +1443,15 @@ color: #404040;
     height: 50px;
   border: 1px solid yellow;
  }
+ 
+ .saving-box{
+width: 100%;
+margin-left: 0;
+}
+.saving-box-title{
+width: 110%;
+margin-left: 0;
+}
   
  .character-progress{top:5px}.character-progress 
  .xp-line{left:162px;top:23px;height:23px;overflow:hidden}
