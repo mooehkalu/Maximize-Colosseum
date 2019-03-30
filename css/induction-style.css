@@ -1205,7 +1205,87 @@ box-shadow:         0px 0px 30px 0px rgba(255,219,0, 0.8);
   
  @media only screen and (max-width:991px){
   .nf-header-top{height:auto}
-  
+  /* saving by category sections */
+.saving-box-title-offset{
+     width: 17%;
+}
+
+.col-half-offset{
+border: 1px solid white;
+     width: 20%;
+}
+
+
+.col-xs-2{
+    background: orange;
+    color:#FFF;
+    text-align: left;
+   
+}
+.col-xs-3{
+    background: red;
+    color:#FFF;
+    text-align: left;
+   
+}
+.col-xs-4{
+    background: green;
+    color:#FFF;
+    text-align: left;
+   
+}
+.col-xs-5{
+    background: blue;
+    color:#FFF;
+    text-align: left;
+   
+}
+.col-xs-6{
+    background: none;
+    color:#FFF;
+    text-align: left;
+   
+}
+.col-xs-7{
+    background: none;
+    color:#FFF;
+    text-align: left;
+   
+}
+
+.col-xs-8{
+    background: none;
+    color:#FFF;
+    text-align: left;
+   
+}
+
+.col-xs-9{
+    background: none;
+    color:#FFF;
+    text-align: left;
+   
+}
+
+.col-xs-10{
+    background: none;
+    color:#FFF;
+    text-align: left;
+   
+}
+
+.col-xs-11{
+    background: none;
+    color:#FFF;
+    text-align: left;
+   
+}
+
+.saving-by-category{
+float: left;
+}
+}
+
  .saving-box{
 width: 75%;
 margin-left: -25px;
