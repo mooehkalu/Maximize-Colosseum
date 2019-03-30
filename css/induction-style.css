@@ -1724,6 +1724,89 @@ margin-left: 0;
 width: 110%;
 margin-left: 0;
 }
+
+/* saving by category sections */
+.saving-box-title-offset{
+     width: 17%;
+}
+
+.col-half-offset{
+border: 1px solid white;
+     width: 20%;
+}
+
+
+
+.col-xs-2{
+    background: orange;
+    color:#FFF;
+    text-align: left;
+   
+}
+.col-xs-3{
+    background: red;
+    color:#FFF;
+    text-align: left;
+   
+}
+.col-xs-4{
+    background: green;
+    color:#FFF;
+    text-align: left;
+   
+}
+.col-xs-5{
+    background: blue;
+    color:#FFF;
+    text-align: left;
+   
+}
+.col-xs-6{
+    background: none;
+    color:#FFF;
+    text-align: left;
+   
+}
+.col-xs-7{
+    background: none;
+    color:#FFF;
+    text-align: left;
+   
+}
+
+.col-xs-8{
+    background: none;
+    color:#FFF;
+    text-align: left;
+   
+}
+
+.col-xs-9{
+    background: none;
+    color:#FFF;
+    text-align: left;
+   
+}
+
+.col-xs-10{
+    background: none;
+    color:#FFF;
+    text-align: left;
+   
+}
+
+.col-xs-11{
+    background: none;
+    color:#FFF;
+    text-align: left;
+   
+}
+
+.saving-by-category{
+float: left;
+}
+
+
   
  .character-progress{top:5px}.character-progress 
  .xp-line{left:162px;top:23px;height:23px;overflow:hidden}
