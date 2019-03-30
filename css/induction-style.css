@@ -261,7 +261,18 @@ format('embedded-opentype'),url(/templates/fonts/pt_serif-webfont.woff2) format(
  .fx-inner-cont p{font-size:13px;font-family:tisasanspro,sans-serif}
  .nfx-epic-quest-wrap 
  .fx-inner-sections{margin-top:50px;padding:0 20px 0 60px}
- 
+
+
+ .saving-box{
+width: 60%;
+margin-left: 120px;
+}
+.saving-box-title{
+width: 70%;
+margin-left: 120px;
+}
+
+
  .saving-category-title{
     background: 0 0;
     color: #d7b756;
