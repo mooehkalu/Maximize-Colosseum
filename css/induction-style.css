@@ -1310,7 +1310,17 @@ color: #404040;
  .vault-image span{font-size:28px}
  .vault-image b{font-size:35px}
  
- 
+ .saving-box{
+    width: 80%;
+    margin-left: -40px;
+}
+.saving-box-title{
+    width: 100%;
+    margin-left: -50px;
+    font-size: 10px;
+}
+
+  
  .container{max-width:460px}
  .class-img{display:none}
  .character-progress 
