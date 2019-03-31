@@ -262,7 +262,16 @@ format('embedded-opentype'),url(/templates/fonts/pt_serif-webfont.woff2) format(
  .nfx-epic-quest-wrap 
  .fx-inner-sections{margin-top:50px;padding:0 20px 0 60px}
 
-
+.colosseum-right-column {
+    color: #d7a856;
+    min-height: 170px;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    right: -180px;
+    width: 45%;
+    z-index: 1;
+}
 
 .saving-category-title{
     background: 0 0;
@@ -1117,6 +1126,16 @@ box-shadow:         0px 0px 30px 0px rgba(255,219,0, 0.8);
  @media only screen and (max-width:991px){
   .nf-header-top{height:auto}
  
+  .colosseum-right-column {
+    color: #d7a856;
+    min-height: 170px;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40%;
+    z-index: 1;
+}
   
  .nf-title-page{background:#404040;color:#d7a856;min-height: 130px;
     padding: 10px 50px;
@@ -1262,7 +1281,8 @@ box-shadow:         0px 0px 30px 0px rgba(255,219,0, 0.8);
  .my-character-modal 
  .col-xs-12{text-align:center}
  .page-template-nfx-my-character-public .character-progress{height:116px}.page-template-nfx-my-character-public 
- .nfx-background-mychar .title-img{margin-left:-6%;width:110%;padding-bottom:6px}#login-submit.nfx-create-account-btn,
+ .nfx-background-mychar 
+  .title-img{margin-left:-6%;width:110%;padding-bottom:6px}#login-submit.nfx-create-account-btn,
  .nfx-create-account .frm_submit input[type=submit]{font-size:24px}}
  @media only screen and (min-width:768px) and (max-width:799px){
  .quest-cats span{background-size:100% 100%}
@@ -1285,10 +1305,10 @@ box-shadow:         0px 0px 30px 0px rgba(255,219,0, 0.8);
 color: #404040;
     font-size: 24px;
     font-weight: 40;
-    left: 130;
+    left: 0;
     position: absolute;
     top: -143px;
-    width: 10px;
+    width: 100%;
     z-index: 300;
  }
 
