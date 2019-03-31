@@ -288,11 +288,11 @@ format('embedded-opentype'),url(/templates/fonts/pt_serif-webfont.woff2) format(
     width: 70%;
 }
 
-.future-name {
+.future-info {
     padding: 2px;
     margin-left: 0;
     margin-right: 0;
-    margin-top: 0;
+    margin-top: -50px;
 }
 
 .saving-category-title{
