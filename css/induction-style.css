@@ -194,10 +194,10 @@ format('embedded-opentype'),url(/templates/fonts/pt_serif-webfont.woff2) format(
  .nf-title-page-h{margin-top:16px;text-indent:116px;
  
  font-family:pt_serifregular,sans-serif;font-size:32px;font-weight:600}
- .bg-top-cont{position:absolute;
+ .bg-top-cont{position:absolute;top:-50px;
  left:0;padding:0 0px;width:100%}
  .page-template-nfx-epic-quest 
- .bg-top-cont{top:-50px}
+ .bg-top-cont{top:-110px}
  .page-template-nfx-courses 
  .bg-top-cont{top:-13px;top:-12.7px}
  .page-template-nfx-my-character-public 
