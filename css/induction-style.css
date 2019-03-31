@@ -274,12 +274,11 @@ format('embedded-opentype'),url(/templates/fonts/pt_serif-webfont.woff2) format(
 }
 
 .business-card {
-   padding: 5px;
-    border-top: none;
-    border-bottom: none;
-    margin-left: 10%;
-    margin-right: 20%;
-    margin-top: 190px;
+    padding: 2px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    width: 70%;
 }
 .saving-category-title{
     background: 0 0;
@@ -1134,6 +1133,14 @@ box-shadow:         0px 0px 30px 0px rgba(255,219,0, 0.8);
  @media only screen and (max-width:991px){
   .nf-header-top{height:auto}
  
+  
+ .business-card {
+    margin-left: 32;
+    margin-right: 0;
+    margin-top: 0;
+    width: 50%;
+}
+  
   .colosseum-right-column {
     color: #d7a856;
     min-height: 170px;
@@ -1426,8 +1433,8 @@ color: #404040;
  @media only screen and (min-width:450px) and (max-width:595px){
  
  .induction-title {
- color:#404040;font-size:24px;font-weight:40; left:140px;
- position:absolute;top:-143px;width:10px;z-index:300
+ color:#404040;font-size:24px;font-weight:40; left:0;
+ position:absolute;top:-143px;width:100%;z-index:300
  }
   .vault-image{width:140px;height:100px;margin-left: 320px;}
  .vault-image span{font-size:28px}
