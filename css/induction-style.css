@@ -293,11 +293,7 @@ format('embedded-opentype'),url(/templates/fonts/pt_serif-webfont.woff2) format(
     margin-left: 30;
     margin-top: -210px;
     width: 40%;
-    line-height: 15px;
-}
-
-.future-name.future-email.future-phone.future-birthday{
-    line-height: 15px;
+    line-height: 20px;
 }
 
 .future-image {
@@ -1016,10 +1012,10 @@ box-shadow:         0px 0px 30px 0px rgba(255,219,0, 0.8);
  @media only screen and (max-width:1199px){
  
  .future-info { 
-    padding: 2px;
-    margin-left: 30;
+    margin-left: 30px;
     margin-top: -170px;
-    width: 45%;
+    width: 40%;
+    line-height: 20px;
   }
   
   .future-image {
@@ -1184,6 +1180,13 @@ box-shadow:         0px 0px 30px 0px rgba(255,219,0, 0.8);
     margin-right: 0;
     margin-top: 0;
     width: 50%;
+}
+ 
+.future-info {
+   margin-left: 60px;
+    margin-top: -190px;
+    width: 25%;
+    line-height: 20px;
 }
   
   .colosseum-right-column img{
