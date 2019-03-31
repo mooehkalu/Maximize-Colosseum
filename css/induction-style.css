@@ -274,8 +274,12 @@ format('embedded-opentype'),url(/templates/fonts/pt_serif-webfont.woff2) format(
 }
 
 .business-card {
-width: 40%;
- height: auto;
+   padding: 5px;
+    border-top: none;
+    border-bottom: none;
+    margin-left: 10%;
+    margin-right: 20%;
+    margin-top: 190px;
 }
 .saving-category-title{
     background: 0 0;
