@@ -273,6 +273,10 @@ format('embedded-opentype'),url(/templates/fonts/pt_serif-webfont.woff2) format(
     z-index: 1;
 }
 
+.business-card {
+width: 40%;
+ height: auto;
+}
 .saving-category-title{
     background: 0 0;
     color: #d7b756;
