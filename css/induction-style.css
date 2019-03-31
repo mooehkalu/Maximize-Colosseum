@@ -1491,13 +1491,13 @@ color: #404040;
 }
  
   .colosseum-right-column img{
-     color: #d7a856;
+    color: #d7a856;
     min-height: 170px;
     padding: 0;
     position: absolute;
-    top: 200;
-    right: 40;
-    width: 70%;
+    top: 10;
+    right: 0;
+    width: 100%;
     z-index: 1;
 }
   
