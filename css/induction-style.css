@@ -1385,7 +1385,9 @@ color: #404040;
  .nfx-background-mychar-second{top:-9px}
  .page-template-nfx-my-character 
  .fx-inner-sections{top:10px}
- .bg-top-cont{top:-8px}
+  
+ .bg-top-cont{top:-110px}
+  
  .bg-bottom-cont{bottom:-7px}
  .nf-char-info-cont .name-slogan 
  .col-sm-12{width:352px;height:78px;margin:12px 0 12px 55px}
