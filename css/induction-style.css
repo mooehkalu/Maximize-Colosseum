@@ -262,7 +262,7 @@ format('embedded-opentype'),url(/templates/fonts/pt_serif-webfont.woff2) format(
  .nfx-epic-quest-wrap 
  .fx-inner-sections{margin-top:50px;padding:0 20px 0 60px}
 
-.colosseum-right-column {
+.colosseum-right-column img{
     color: #d7a856;
     min-height: 170px;
     padding: 0;
@@ -1349,6 +1349,16 @@ color: #404040;
  .vault-image span{font-size:28px}
  .vault-image b{font-size:35px}
   
+  .colosseum-right-column img{
+    color: #d7a856;
+    min-height: 170px;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    right: -180px;
+    width: 50%;
+    z-index: 1;
+}
   
  .container{max-width:460px}
  .class-img{display:none}
