@@ -298,6 +298,7 @@ format('embedded-opentype'),url(/templates/fonts/pt_serif-webfont.woff2) format(
     padding: 10px;
     margin-left: 130;
     margin-top: -210px;
+    width: 20%;
 }
 
 .saving-category-title{
