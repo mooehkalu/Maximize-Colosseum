@@ -290,9 +290,8 @@ format('embedded-opentype'),url(/templates/fonts/pt_serif-webfont.woff2) format(
 
 .future-info {
     padding: 2px;
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: -50px;
+    margin-left: 30;
+    margin-top: -210px;
 }
 
 .saving-category-title{
