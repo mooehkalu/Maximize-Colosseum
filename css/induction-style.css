@@ -287,6 +287,14 @@ format('embedded-opentype'),url(/templates/fonts/pt_serif-webfont.woff2) format(
     margin-top: 0;
     width: 70%;
 }
+
+.future-name {
+    padding: 2px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+}
+
 .saving-category-title{
     background: 0 0;
     color: #d7b756;
