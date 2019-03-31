@@ -194,10 +194,16 @@ format('embedded-opentype'),url(/templates/fonts/pt_serif-webfont.woff2) format(
  .nf-title-page-h{margin-top:16px;text-indent:116px;
  
  font-family:pt_serifregular,sans-serif;font-size:32px;font-weight:600}
- .bg-top-cont{position:absolute;top:-50px;
- left:0;padding:0 0px;width:100%}
+
+ .bg-top-cont {
+   position:absolute;
+   left:0;
+   padding:0 0px;
+   width:100%
+}
+
  .page-template-nfx-epic-quest 
- .bg-top-cont{top:-110px}
+ .bg-top-cont{}
  .page-template-nfx-courses 
  .bg-top-cont{top:-13px;top:-12.7px}
  .page-template-nfx-my-character-public 
@@ -1279,7 +1285,9 @@ box-shadow:         0px 0px 30px 0px rgba(255,219,0, 0.8);
  .page-template-nfx-my-character-public 
  .bg-my-char{top:-9px}
  .fx-content-page{padding-left:0;padding-right:0}
- .bg-top-cont{padding:0;top:-11px}
+  
+ .bg-top-cont{padding:0;top:-50px}
+  
  .bg-bottom-cont{bottom:-10px;padding:0}
  .bg-quest-top{height:220px}
  .nf-char-view{height:auto}
