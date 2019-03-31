@@ -1141,14 +1141,14 @@ box-shadow:         0px 0px 30px 0px rgba(255,219,0, 0.8);
     width: 50%;
 }
   
-  .colosseum-right-column {
-        color: #d7a856;
+  .colosseum-right-column img{
+    color: #d7a856;
     min-height: 170px;
     padding: 0;
     position: absolute;
     top: 180;
     right: 10;
-    width: 90%;
+    width: 50%;
     z-index: 1;
 }
   
