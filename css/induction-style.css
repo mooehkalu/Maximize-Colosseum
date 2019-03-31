@@ -1490,8 +1490,8 @@ color: #404040;
     width: 100%;
 }
  
-  .colosseum-right-column {
-        color: #d7a856;
+  .colosseum-right-column img{
+     color: #d7a856;
     min-height: 170px;
     padding: 0;
     position: absolute;
