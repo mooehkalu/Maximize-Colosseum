@@ -289,7 +289,6 @@ format('embedded-opentype'),url(/templates/fonts/pt_serif-webfont.woff2) format(
 }
 
 .future-info {
-    padding: none;
     margin-left: 30;
     margin-top: -210px;
     width: 40%;
@@ -1357,6 +1356,22 @@ box-shadow:         0px 0px 30px 0px rgba(255,219,0, 0.8);
  .quest-body-block img{margin-left:auto;margin-right:auto;display:block}}
  @media only screen and (max-width:768px){
  
+   .future-info { 
+    margin-left: 30px;
+    margin-top: -160px;
+    width: 30%;
+    line-height: 20px;
+  }
+  
+  .future-image {
+    padding: 0;
+    margin-left: 150;
+    margin-top: -140px;
+    width: 15%;
+    border: 1px solid #c7c7c7;
+}
+ 
+  
  .top-banner{
   left:0;padding:0 5px;
   position:absolute; 
