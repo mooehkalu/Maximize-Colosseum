@@ -295,15 +295,9 @@ format('embedded-opentype'),url(/templates/fonts/pt_serif-webfont.woff2) format(
     line-height: 20px;
 }
 .future-company {
-    margin-left: 30;
-    margin-top: -180px;
-    width: 40%;
-    line-height: 20px;
-}
-.future-charater-name{
-    margin-left: 30;
-    margin-top: -180px;
-    width: 40%;
+    margin-left: 0;
+    margin-top: 30px;
+    width: 50%;
     line-height: 20px;
 }
 .future-image {
