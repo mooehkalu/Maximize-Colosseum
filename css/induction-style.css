@@ -300,10 +300,16 @@ format('embedded-opentype'),url(/templates/fonts/pt_serif-webfont.woff2) format(
     width: 40%;
     line-height: 20px;
 }
+.future-charater-name{
+    margin-left: 30;
+    margin-top: -180px;
+    width: 40%;
+    line-height: 20px;
+}
 .future-image {
     padding: 0;
     margin-left: 250;
-    margin-top: -210px;
+    margin-top: -185px;
     width: 15%;
     border: 1px solid #c7c7c7;
 }
