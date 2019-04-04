@@ -58,29 +58,25 @@ border: 1px solid #c7c7c7;
  
  
 .future-info {
-margin-left: 30px;
-    
-margin-top: -170px;
-    
-width: 40%;
-    
+margin-left: 30px;    
+margin-top: -170px;    
+width: 40%;   
 line-height: 20px;
-  }
-  
-  
+}
 
+.future-company {
+    margin-left: 0;
+    margin-top: -5px;
+    width: 100;
+    line-height: 20px;
+}
+  
 .future-image {
-    
-padding: 0;
-    
-margin-left: 150;
-    
-margin-top: -210px;
-    
-width: 15%;
-    
-border: 1px solid #c7c7c7;
-
+    padding: 0;
+    margin-left: 180px;
+    margin-top: -200px;
+    margin-left: 10;
+    border: 1px solid #c7c7c7;
 }
  
 }
