@@ -280,33 +280,6 @@ format('embedded-opentype'),url(/templates/fonts/pt_serif-webfont.woff2) format(
     z-index: 1;
 }
 
-.business-card {
-    padding: 2px;
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 0;
-    width: 70%;
-}
-
-.future-info {
-    margin-left: 30;
-    margin-top: -210px;
-    width: 40%;
-    line-height: 20px;
-}
-.future-company {
-    margin-left: 0;
-    margin-top: 30px;
-    width: 50%;
-    line-height: 20px;
-}
-.future-image {
-    padding: 0;
-    margin-left: 250;
-    margin-top: -185px;
-    width: 15%;
-    border: 1px solid #c7c7c7;
-}
 
 .saving-category-title{
     background: 0 0;
@@ -1015,22 +988,7 @@ box-shadow:         0px 0px 30px 0px rgba(255,219,0, 0.8);
  
  @media only screen and (max-width:1199px){
  
- .future-info { 
-    margin-left: 30px;
-    margin-top: -170px;
-    width: 40%;
-    line-height: 20px;
-  }
-  
-  .future-image {
-    padding: 0;
-    margin-left: 150;
-    margin-top: -210px;
-    width: 15%;
-    border: 1px solid #c7c7c7;
-}
-  
-  
+ 
  ul#menu-nfx-1{margin-left:-7px}
  .top-banner{height:160px}
  .nf-char-info-cont 
@@ -1178,20 +1136,6 @@ box-shadow:         0px 0px 30px 0px rgba(255,219,0, 0.8);
  @media only screen and (max-width:991px){
   .nf-header-top{height:auto}
  
-  
- .business-card {
-    margin-left: 32;
-    margin-right: 0;
-    margin-top: 0;
-    width: 50%;
-}
- 
-.future-info {
-   margin-left: 60px;
-    margin-top: -190px;
-    width: 25%;
-    line-height: 20px;
-}
   
   .colosseum-right-column img{
     color: #d7a856;
