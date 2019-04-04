@@ -14,27 +14,18 @@ width: 70%;
 
 
 
-.future-info {
-    
-margin-left: 30;
-    
-margin-top: -210px;
-    
-width: 40%;
-    
+.future-info {  
+margin-left: 30;    
+margin-top: -210px;    
+width: 40%;    
 line-height: 20px;
-
 }
 
 
-.future-company {
-    
-margin-left: 0;
-    
-margin-top: 30px;
-    
-width: 50%;
-    
+.future-company {    
+margin-left: 0;    
+margin-top: 30px;    
+width: 50%;    
 line-height: 20px;
 
 }
@@ -110,4 +101,11 @@ line-height: 20px;
 
 }
 
-
+@media only screen and (max-width:480px){
+.business-card {
+    margin-left: 20;
+    margin-right: 0;
+    margin-top: 0;
+    width: 90%;
+}
+}
