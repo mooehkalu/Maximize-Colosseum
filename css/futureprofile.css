@@ -1,0 +1,123 @@
+﻿.business-card {
+    
+padding: 2px;
+    
+margin-left: 0;
+    
+margin-right: 0;
+    
+margin-top: 0;
+    
+width: 70%;
+
+}
+
+
+
+.future-info {
+    
+margin-left: 30;
+    
+margin-top: -210px;
+    
+width: 40%;
+    
+line-height: 20px;
+
+}
+
+
+.future-company {
+    
+margin-left: 0;
+    
+margin-top: 30px;
+    
+width: 50%;
+    
+line-height: 20px;
+
+}
+
+.future-image {
+   
+padding: 0;
+    
+margin-left: 250;
+    
+margin-top: -185px;
+    
+width: 15%;
+    
+border: 1px solid #c7c7c7;
+
+}
+
+
+@media only screen and (max-width:1199px){
+ 
+ 
+.future-info {
+margin-left: 30px;
+    
+margin-top: -170px;
+    
+width: 40%;
+    
+line-height: 20px;
+  }
+  
+  
+
+.future-image {
+    
+padding: 0;
+    
+margin-left: 150;
+    
+margin-top: -210px;
+    
+width: 15%;
+    
+border: 1px solid #c7c7c7;
+
+}
+ 
+}
+
+
+@media only screen and (max-width:991px){
+.future-image {
+    padding: 0;
+    margin-left: 200;
+    margin-top: -145px;
+    width: 15%;
+    border: 1px solid #c7c7c7;
+}
+
+.business-card {
+    
+margin-left: 32;
+   
+ margin-right: 0;
+    
+margin-top: 0;
+    
+width: 50%;
+
+}
+ 
+
+.future-info {
+   
+margin-left: 60px;
+    
+margin-top: -190px;
+    
+width: 25%;
+    
+line-height: 20px;
+
+}
+
+}
