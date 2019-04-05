@@ -95,7 +95,7 @@ width: 50%;
     line-height: 20px;
 }
 .future-info {   
-margin-left: 60px;    
+margin-left: 40px;    
 margin-top: -190px;    
 width: 25%;    
 line-height: 20px;
@@ -104,8 +104,8 @@ line-height: 20px;
 }
 @media only screen and (max-width:768px){
 .future-info {
-    margin-left: 60px;
-    margin-top: -120px;
+    margin-left: 40px;
+    margin-top: -140px;
     width: 25%;
     font-size: 12px;
     line-height: 15px;
@@ -126,10 +126,25 @@ line-height: 20px;
 }
 }
 @media only screen and (max-width:480px){
+.future-company {
+    margin-left: 0;
+    margin-top: 5px;
+    width: 190px;
+    line-height: 10px;
+    border: 2px solid red;
+}
+.future-info {
+    margin-left: 40px;
+    margin-top: -140px;
+    width: 25%;
+    font-size: 12px;
+    line-height: 15px;
+}
 .business-card {
     margin-left: 20;
     margin-right: 0;
     margin-top: 0;
     width: 90%;
 }
+ 
 }
