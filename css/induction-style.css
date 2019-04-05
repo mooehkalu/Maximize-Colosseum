@@ -255,7 +255,7 @@ format('embedded-opentype'),url(/templates/fonts/pt_serif-webfont.woff2) format(
  .course-box-button{margin-top:3%;
  margin-top:3vh;margin-bottom:-15px}
 
- .course-page-buttons{color:#fff;font-style:italic;padding: 8px;}
+ .course-page-buttons{color:#fff;font-style:italic;padding: 4px;}
  .course-page-buttons:hover{color:#fff}
  .course-luyl-book img{max-width:300%;width:150%;
  margin-left:-25%;margin-top:0%}
