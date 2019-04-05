@@ -227,7 +227,10 @@ format('embedded-opentype'),url(/templates/fonts/pt_serif-webfont.woff2) format(
  .fx-content-title{background:url(https://nerdfitness.com/wp-content/themes/NerdFitness/templates/images/header-module.png) center center no-repeat;
  background-size:cover;color:#c73737;font-size:24px;padding-bottom:1px;text-align:center;border-top-left-radius:5px;
  border-top-right-radius:5px;border-bottom-left-radius:5px;border-bottom-right-radius:5px}
- .fx-content-section{background:url(templates/images/inner-content.png) 0 0 no-repeat;background-size:cover;
+
+.fx-content-section{ background-color: white; } 
+/*background:url(templates/images/inner-content.png) 0 0 no-repeat;background-size:cover;*/
+  
  border-top-left-radius:5px;border-top-right-radius:5px;border-bottom-left-radius:5px;border-bottom-right-radius:5px;
  padding-top:20px;padding-bottom:30px;padding-right:30px;padding-left:30px;margin-bottom:20px;overflow:hidden}
  .fx-section-title{padding-top:10px;font-weight:700;text-transform:capitalize}
