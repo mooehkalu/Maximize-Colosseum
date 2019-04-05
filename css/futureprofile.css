@@ -73,12 +73,13 @@ line-height: 20px;
 
 
 @media only screen and (max-width:991px){
-.future-company {
-    margin-left: 0;
-    margin-top: 8px;
-    width: 100;
-    line-height: 20px;
+.business-card {  
+margin-left: 32;   
+ margin-right: 0;    
+margin-top: 0;    
+width: 50%;
 }
+
 .future-image {
     padding: 0;
     margin-left: 250px;
@@ -86,13 +87,13 @@ line-height: 20px;
     width: 12%;
     border: 1px solid #c7c7c7;
     
-.business-card {  
-margin-left: 32;   
- margin-right: 0;    
-margin-top: 0;    
-width: 50%;
+    }
+  .future-company {
+    margin-left: 0;
+    margin-top: 8px;
+    width: 100;
+    line-height: 20px;
 }
- 
 .future-info {   
 margin-left: 60px;    
 margin-top: -190px;    
