@@ -218,8 +218,14 @@ format('embedded-opentype'),url(/templates/fonts/pt_serif-webfont.woff2) format(
  .qh-scroll-up{position:absolute;
  bottom:0;width:100%;text-align:center;left:0}
  .qh-scroll-up img{height:10px}
- .fx-inner-cont{padding:20px 50px;
- position:relative;z-index:1}
+
+ .fx-inner-cont{
+  padding:20px 50px; 
+  width: 100%;
+ position:relative;
+  z-index:1
+}
+
  .fx-inner-sections{position:relative;z-index:1}
  .page-template-nfx-my-character 
  .fx-inner-sections{min-height:520px}
@@ -264,8 +270,16 @@ format('embedded-opentype'),url(/templates/fonts/pt_serif-webfont.woff2) format(
  .page-template-nfx-epic-quest header{position:static}
  
  .nfx-epic-quest-wrap 
- .fx-inner-cont{padding:5px;border-top:none;border-bottom:none;margin-left:10%;margin-right:20%;margin-top:190px;
- background-image:none;}
+ .fx-inner-cont{
+  padding:5px;
+  border-top:none;
+  border-bottom:none;
+  margin-left:5%;
+  margin-right:0;
+  margin-top:190px;
+ background-image:none;
+}
+
  .nfx-epic-quest-wrap 
  .fx-inner-cont h2{font-size:18px;font-family:tisasanspro-bold,sans-serif;
  margin-top:0}
