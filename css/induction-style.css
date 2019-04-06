@@ -234,9 +234,18 @@ format('embedded-opentype'),url(/templates/fonts/pt_serif-webfont.woff2) format(
  background-size:cover;color:#c73737;font-size:24px;padding-bottom:1px;text-align:center;border-top-left-radius:5px;
  border-top-right-radius:5px;border-bottom-left-radius:5px;border-bottom-right-radius:5px}
 
-.fx-content-section{background:url(https://www.nerdfitness.com//wp-content/themes/NerdFitness/templates/images/inner-content.png) 0 0 no-repeat;background-size:cover; 
- border-top-left-radius:5px;border-top-right-radius:5px;border-bottom-left-radius:5px;border-bottom-right-radius:5px;
- padding-top:20px;padding-bottom:30px;padding-right:30px;padding-left:30px;margin-bottom:20px;overflow:hidden;
+.fx-content-section{
+ background-color: white;
+ border-top-left-radius:5px;
+ border-top-right-radius:5px;
+ border-bottom-left-radius:5px;
+ border-bottom-right-radius:5px;
+ padding-top:20px;
+ padding-bottom:30px;
+ padding-right:30px;
+ padding-left:30px;
+ margin-bottom:20px;
+ overflow:hidden;
 }
 
  .fx-section-title{padding-top:10px;font-weight:700;text-transform:capitalize}
@@ -1178,6 +1187,7 @@ box-shadow:         0px 0px 30px 0px rgba(255,219,0, 0.8);
     z-index: 1;}
     
  .fx-content-page{padding-top:0}
+  
  .col-sm-10{width:100%}
  .col-sm-offset-2{margin-left:0;padding:0}
  .menu-item-720565,
@@ -1200,11 +1210,15 @@ box-shadow:         0px 0px 30px 0px rgba(255,219,0, 0.8);
  .page-template-nfx-my-character-public 
  .nfx-background-mychar .title-img{margin-left:14px;padding-bottom:6px}.page-template-nfx-my-character-public 
  .bg-top-cont{top:-10px}.page-template-nfx-my-character-public .bg-bottom-cont{bottom:-10px}
- .page-template-nfx-my-character-public .nfx-background-mychar-second{top:-265px}.page-template-nfx-my-character-public 
+ .page-template-nfx-my-character-public .nfx-background-mychar-second{top:-265px}
+  .page-template-nfx-my-character-public 
  .fx-inner-sections{min-height:634px;top:5px}.page-template-nfx-epic-quest .bg-progress-big,.page-template-nfx-epic-quest 
  .xp-bar{top:69px}.page-template-nfx-epic-quest .fx-content-title{top:-12px}
+  
  .fx-content-title{background:url(templates/images/header-module.png) center center no-repeat}
- .fx-content-section{background:url(templates/images/inner-content.png) center top no-repeat}
+  
+ .fx-content-section{}
+  
  .fx-content-title h3{text-align:center}#charWelcomeModal .modal-dialog{width:90%;margin-left:5%}
  .page-template-nfx-my-character-public .bg-bottom-cont{bottom:-16px}.page-template-nfx-my-character-public 
  .nf-char-view{min-height:690px}.page-template-nfx-my-character-public .nf-char-info-cont .name-slogan 
