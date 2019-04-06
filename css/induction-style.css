@@ -210,13 +210,26 @@ format('embedded-opentype'),url(/templates/fonts/pt_serif-webfont.woff2) format(
  .page-template-nfx-my-character-public 
  .bg-top-cont{top:-16px}
  .page-template-nfx-new-account 
+
  .bg-top-cont{top:13px;top:-13.4px}
- .bg-bottom-cont{position:absolute;bottom:-13px;left:0;
- padding:0 25px;width:100%}
+
+ .bg-bottom-cont{
+ position: absolute;
+    bottom: -13px;
+    left: 0;
+    padding: 0 25px;
+    width: 100%;
+    border-radius: 6px;
+    background-color: lightgrey;
+}
+
  .page-template-nfx-new-account 
  .bg-bottom-cont{padding:0 50px}
+
  .qh-scroll-up{position:absolute;
- bottom:0;width:100%;text-align:center;left:0}
+ bottom:0;width:100%;text-align:center;left:0
+}
+
  .qh-scroll-up img{height:10px}
 
  .fx-inner-cont{
