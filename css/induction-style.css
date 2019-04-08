@@ -293,13 +293,16 @@ format('embedded-opentype'),url(/templates/fonts/pt_serif-webfont.woff2) format(
  
  .nfx-epic-quest-wrap 
  .fx-inner-cont{
-  padding:5px;
-  border-top:none;
-  border-bottom:none;
-  margin-left:5%;
-  margin-right:0;
-  margin-top:190px;
- background-image:none;
+     padding-top: 20px;
+    padding-bottom: 10px;
+    border-top: none;
+    border-bottom: none;
+    border-radius: 5px;
+    margin-left: 5%;
+    margin-right: 0;
+    margin-top: 190px;
+    background-image: none;
+    background-color: #a9a9a924;
 }
 
  .nfx-epic-quest-wrap 
