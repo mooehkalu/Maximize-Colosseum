@@ -6,6 +6,7 @@
     background-size: 360px 200px;
     background-repeat: no-repeat;
     padding: 12px;
+    margin-left: -35px;
 }
 iframe {border:2px solid #ccc;
     border-radius: 2px !important;
@@ -40,4 +41,14 @@ iframe {border:2px solid #ccc;
 }
 }
 @media only screen and (max-width: 480px){
+   .colosseum-right-column img {
+    color: #d7a856;
+    min-height: 170px;
+    padding: 0;
+    position: absolute;
+    top: 250;
+    right: 40px;
+    width: 70%;
+    z-index: 1;
+}
 }
