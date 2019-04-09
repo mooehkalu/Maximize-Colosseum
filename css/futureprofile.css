@@ -1,3 +1,22 @@
+.fp-bg-img{
+    background-image: url(https://mooehkalu.github.io/Maximize-Colosseum/images/future/ResistanceBusCard.png);
+    border: 2px solid #ccc;
+    width: 360px;
+    height: 200px;
+    background-size: 360px 200px;
+    background-repeat: no-repeat;
+    padding: 12px;
+}
+iframe {border:2px solid #ccc;
+    border-radius: 2px !important;
+}
+
+@media only screen and (max-width: 1199px){
+    
+}
+@media only screen and (max-width: 991px){
+    
+}
 @media only screen and (max-width: 768px){
 .colosseum-right-column img {
     color: #d7a856;
@@ -9,4 +28,6 @@
     width: 70%;
     z-index: 1;
 }
+}
+@media only screen and (max-width: 480px){
 }
