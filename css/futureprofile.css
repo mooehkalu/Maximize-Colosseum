@@ -1,163 +1,434 @@
-	
 
-
-.business-card {   
-padding: 2px;    
-margin-left: 0;    
-margin-right: 0;    
-margin-top: -20px; 
-width: 55%;
+/* saving by category sections */
+.saving-box-title-offset{
+     width: 17%;
 }
-
-
-
-.future-info {  
-    margin-left: 30px;
-    margin-top: -210px;
-    width: 40%;
-    line-height: 23px;
+.col-half-offset{
+border: 1px solid white;
+     width: 20%;
 }
-
-
-.future-company {    
-margin-left: 0;    
-margin-top: 30px;    
-width: 50%;    
-line-height: 20px;
-
+.saving-box{
+width: 60%;
+margin-left: 120px;
 }
-
-.future-image {
+.saving-box-title{
+width: 70%;
+margin-left: 120px;
+}
+.col-xs-2{
+    background: orange;
+    color:#FFF;
+    text-align: left;
    
-padding: 0;
-    
-margin-left: 250;
-    
-margin-top: -185px;
-    
-width: 15%;
-    
-border: 1px solid #c7c7c7;
-
 }
-
-
-@media only screen and (max-width:1199px){
- 
- 
-.future-info {
-   margin-left: 30px;
-    margin-top: -165px;
-    width: 40%;
-    line-height: 18px;
+.col-xs-3{
+    background: red;
+    color:#FFF;
+    text-align: left;
+   
 }
-
-.future-company {
-    margin-left: 0;
-    margin-top: -5px;
-    width: 100;
-    line-height: 20px;
+.col-xs-4{
+    background: green;
+    color:#FFF;
+    text-align: left;
+   
 }
-  
-.future-image {
-    padding: 0;
-    margin-left: 200px;
-    margin-top: -145px;
-    border: 1px solid #c7c7c7;
+.col-xs-5{
+    background: blue;
+    color:#FFF;
+    text-align: left;
+   
 }
-.business-card {
-    padding: 2px;
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: -21;
-    width: 55%;
+.col-xs-6{
+    background: none;
+    color:#FFF;
+    text-align: left;
+   
 }
+.col-xs-7{
+    background: none;
+    color:#FFF;
+    text-align: left;
+   
 }
-
+.col-xs-8{
+    background: none;
+    color:#FFF;
+    text-align: left;
+   
+}
+.col-xs-9{
+    background: none;
+    color:#FFF;
+    text-align: left;
+   
+}
+.col-xs-10{
+    background: none;
+    color:#FFF;
+    text-align: left;
+   
+}
+.col-xs-11{
+    background: none;
+    color:#FFF;
+    text-align: left;
+   
+}
+.saving-by-category{
+float: left;
+}
 
 @media only screen and (max-width:991px){
-.business-card {  
-margin-left: 32;   
- margin-right: 0;    
-margin-top: -20px;    
-width: 50%;
+ /* saving by category sections */
+.saving-box-title-offset{
+     width: 17%;
 }
+.col-half-offset{
+border: 1px solid white;
+     width: 20%;
 }
-
-.future-image {
-    padding: 0;
-    margin-left: 240px;
-    margin-top: -150px;
-    width: 10%;
-    border: 1px solid #c7c7c7;
-    
-    }
-  .future-company {
-    margin-left: 0;
-    margin-top: 8px;
-    width: 100;
-    line-height: 20px;
+.saving-box{
+width: 60%;
+margin-left: 0;
 }
-.future-info {   
-    margin-left: 60px;
-    margin-top: -170px;
-    width: 40%;
-    line-height: 18px;
+.saving-box-title{
+width: 70%;
+margin-left: 0;
 }
-
+.col-xs-2{
+    background: orange;
+    color:#FFF;
+    text-align: left;
+   
+}
+.col-xs-3{
+    background: red;
+    color:#FFF;
+    text-align: left;
+   
+}
+.col-xs-4{
+    background: green;
+    color:#FFF;
+    text-align: left;
+   
+}
+.col-xs-5{
+    background: blue;
+    color:#FFF;
+    text-align: left;
+   
+}
+.col-xs-6{
+    background: none;
+    color:#FFF;
+    text-align: left;
+   
+}
+.col-xs-7{
+    background: none;
+    color:#FFF;
+    text-align: left;
+   
+}
+.col-xs-8{
+    background: none;
+    color:#FFF;
+    text-align: left;
+   
+}
+.col-xs-9{
+    background: none;
+    color:#FFF;
+    text-align: left;
+   
+}
+.col-xs-10{
+    background: none;
+    color:#FFF;
+    text-align: left;
+   
+}
+.col-xs-11{
+    background: none;
+    color:#FFF;
+    text-align: left;
+   
+}
+.saving-by-category{
+float: left;
+}
 }
 @media only screen and (max-width:768px){
-
-.future-info {
-    margin-left: 60px;
-    margin-top: -120px;
-    width: 25%;
+.saving-box{
+    width: 80%;
+    margin-left: -40px;
+}
+.saving-box-title{
+    width: 100%;
+    margin-left: -50px;
     font-size: 10px;
-    line-height: 13px;
 }
-.future-company {
-    margin-left: 0;
-    margin-top: 5px;
-    width: 170px;
-    line-height: 10px;
+/* saving by category sections */
+.saving-box-title-offset{
+     width: 17%;
 }
-.future-image {
-    padding: 0;
-    margin-left: 170px;
-    margin-top: -100px;
-    width: 10%;
-    border: 1px solid #c7c7c7;
-}
-}
-@media only screen and (max-width:480px){
-.future-company {
-    margin-left: 0;
-    margin-top: 5px;
-    width: 190px;
-    line-height: 10px;
 
+.col-half-offset{
+border: 1px solid white;
+     width: 20%;
 }
-.future-charater-name {
-    width: 190px;
+
+
+.col-xs-2{
+    background: orange;
+    color:#FFF;
+    text-align: left;
+   
 }
-.future-info {
-    margin-left: 40px;
-    margin-top: -135px;
-    width: 25%;
-    font-size: 12px;
-    line-height: 15px;
+.col-xs-3{
+    background: red;
+    color:#FFF;
+    text-align: left;
+   
 }
-.business-card {
-    margin-left: 20;
-    margin-right: 0;
-    margin-top: 0;
-    width: 90%;
+.col-xs-4{
+    background: green;
+    color:#FFF;
+    text-align: left;
+   
 }
-.future-image {
-    padding: 0;
-    margin-left: 170px;
-    margin-top: -120px;
-    width: 20%;
-    border: 1px solid #c7c7c7;
+.col-xs-5{
+    background: blue;
+    color:#FFF;
+    text-align: left;
+   
 }
+.col-xs-6{
+    background: none;
+    color:#FFF;
+    text-align: left;
+   
 }
+.col-xs-7{
+    background: none;
+    color:#FFF;
+    text-align: left;
+   
+}
+
+.col-xs-8{
+    background: none;
+    color:#FFF;
+    text-align: left;
+   
+}
+
+.col-xs-9{
+    background: none;
+    color:#FFF;
+    text-align: left;
+   
+}
+
+.col-xs-10{
+    background: none;
+    color:#FFF;
+    text-align: left;
+   
+}
+
+.col-xs-11{
+    background: none;
+    color:#FFF;
+    text-align: left;
+   
+}
+
+.saving-by-category{
+float: left;
+}
+
+
+@media only screen and (max-width:480px){
+.saving-box{
+width: 100%;
+margin-left: 0;
+}
+.saving-box-title{
+width: 110%;
+margin-left: 0;
+}
+
+/* saving by category sections */
+.saving-box-title-offset{
+     width: 17%;
+}
+
+.col-half-offset{
+border: 1px solid white;
+     width: 20%;
+}
+
+
+
+.col-xs-2{
+    background: orange;
+    color:#FFF;
+    text-align: left;
+   
+}
+.col-xs-3{
+    background: red;
+    color:#FFF;
+    text-align: left;
+   
+}
+.col-xs-4{
+    background: green;
+    color:#FFF;
+    text-align: left;
+   
+}
+.col-xs-5{
+    background: blue;
+    color:#FFF;
+    text-align: left;
+   
+}
+.col-xs-6{
+    background: none;
+    color:#FFF;
+    text-align: left;
+   
+}
+.col-xs-7{
+    background: none;
+    color:#FFF;
+    text-align: left;
+   
+}
+
+.col-xs-8{
+    background: none;
+    color:#FFF;
+    text-align: left;
+   
+}
+
+.col-xs-9{
+    background: none;
+    color:#FFF;
+    text-align: left;
+   
+}
+
+.col-xs-10{
+    background: none;
+    color:#FFF;
+    text-align: left;
+   
+}
+
+.col-xs-11{
+    background: none;
+    color:#FFF;
+    text-align: left;
+   
+}
+
+.saving-by-category{
+float: left;
+}
+
+
+@media only screen and (max-width:480px){
+/* saving by category sections */
+.saving-box-title-offset{
+     width: 17%;
+}
+
+.col-half-offset{
+border: 1px solid white;
+     width: 20%;
+}
+
+.saving-box{
+width: 100%;
+margin-left: 0;
+}
+.saving-box-title{
+width: 110%;
+margin-left: 0;
+}
+
+.col-xs-2{
+    background: orange;
+    color:#FFF;
+    text-align: left;
+   
+}
+.col-xs-3{
+    background: red;
+    color:#FFF;
+    text-align: left;
+   
+}
+.col-xs-4{
+    background: green;
+    color:#FFF;
+    text-align: left;
+   
+}
+.col-xs-5{
+    background: blue;
+    color:#FFF;
+    text-align: left;
+   
+}
+.col-xs-6{
+    background: none;
+    color:#FFF;
+    text-align: left;
+   
+}
+.col-xs-7{
+    background: none;
+    color:#FFF;
+    text-align: left;
+   
+}
+
+.col-xs-8{
+    background: none;
+    color:#FFF;
+    text-align: left;
+   
+}
+
+.col-xs-9{
+    background: none;
+    color:#FFF;
+    text-align: left;
+   
+}
+
+.col-xs-10{
+    background: none;
+    color:#FFF;
+    text-align: left;
+   
+}
+
+.col-xs-11{
+    background: none;
+    color:#FFF;
+    text-align: left;
+   
+}
+
+.saving-by-category{
+float: left;
+}
+
