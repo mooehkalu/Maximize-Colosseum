@@ -319,8 +319,8 @@ format('embedded-opentype'),url(/templates/fonts/pt_serif-webfont.woff2) format(
     padding: 0;
     position: absolute;
     top: 0;
-    right: -180px;
-    width: 45%;
+    right: 0;
+    width: 35%;
     z-index: 1;
 }
 
