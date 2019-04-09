@@ -43,10 +43,10 @@ border: 1px solid #c7c7c7;
  
  
 .future-info {
-margin-left: 30px;    
-margin-top: -170px;    
-width: 40%;   
-line-height: 20px;
+    margin-left: 30px;
+    margin-top: -160px;
+    width: 40%;
+    line-height: 19px;
 }
 
 .future-company {
@@ -58,11 +58,17 @@ line-height: 20px;
   
 .future-image {
     padding: 0;
-       margin-left: 180px;
-    margin-top: -150px;
+    margin-left: 180px;
+    margin-top: -145px;
     border: 1px solid #c7c7c7;
 }
- 
+.business-card {
+    padding: 2px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: -21;
+    width: 55%;
+}
 }
 
 
@@ -70,14 +76,15 @@ line-height: 20px;
 .business-card {  
 margin-left: 32;   
  margin-right: 0;    
-margin-top: 0;    
+margin-top: -20px;    
 width: 50%;
+}
 }
 
 .future-image {
     padding: 0;
     margin-left: 250px;
-    margin-top: -160px;
+    margin-top: -150px;
     width: 10%;
     border: 1px solid #c7c7c7;
     
@@ -89,10 +96,10 @@ width: 50%;
     line-height: 20px;
 }
 .future-info {   
-margin-left: 60px;    
-margin-top: -190px;    
-width: 25%;    
-line-height: 20px;
+    margin-left: 60px;
+    margin-top: -175px;
+    width: 25%;
+    line-height: 18px;
 }
 
 }
