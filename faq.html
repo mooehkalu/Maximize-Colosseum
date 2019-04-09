@@ -297,10 +297,7 @@ FAQ
 
 <div class="fx-content-page">
 <img class="bg-top-cont" src="https://www.nerdfitness.com/wp-content/themes/NerdFitness/templates/images/top-content-section.jpg" alt="top-cont">
-<div class="fx-inner-cont">
-</div>
 <div class="fx-inner-sections">
-<div class="col-sm-12 col-xs-12">
 <div class="col-sm-12 col-xs-12">
 
 <div class="fx-content-section">
@@ -308,9 +305,9 @@ FAQ
 <div id="accordion2" class="accordion">
 
 <div class="accordion-group">
-<h3 class="accordion-heading"><a class="accordion-toggle" href="#collapseTwo" data-toggle="collapse" data-parent="#accordion2"><br>
+<h4 class="accordion-heading"><a class="accordion-toggle" href="#collapseTwo" data-toggle="collapse" data-parent="#accordion2"><br>
 Can I request a feature or quest?<br>
-</a></h3>
+</a></h4>
 <div id="collapseTwo" class="accordion-body collapse">
 <div class="accordion-inner">
 <p>We’re working hard at constantly making updates to your Nerd Fitness Character and Epic Quest. We’ve already got a ton of new features in the works (like being able to re-organize your quest lists, a user dashboard, and badges), and we will be releasing them as soon as they are ready.</p>
@@ -387,6 +384,22 @@ Can I request a feature or quest?<br>
   </footer>
   <!-- Footer -->
 <style>
+.fx-content-section {
+    background-color: #d2d2d2;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-left: -140px;
+    margin-bottom: 20px;
+    margin-top: 120;
+    overflow: hidden;
+    width: 150%;
+}
 /* saving by category sections */
 .saving-box-title-offset{
      width: 17%;
@@ -466,8 +479,27 @@ margin-left: 120px;
 .saving-by-category{
 float: left;
 }
-
+@media only screen and (max-width:1199px){
+.fx-content-section {
+    width: 150%;
+}
+}
 @media only screen and (max-width:991px){
+.fx-content-section {
+    background-color: #d2d2d2;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    margin-top: 120;
+    overflow: hidden;
+    width: 100%;
+}
  /* saving by category sections */
 .saving-box-title-offset{
      width: 17%;
