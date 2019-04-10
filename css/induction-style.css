@@ -56,20 +56,20 @@ format('embedded-opentype'),url(/templates/fonts/pt_serif-webfont.woff2) format(
  #navlist li{margin:0;padding:0;list-style:none;display:block}
  #navlist li a{display:block;height:inherit;color:transparent}
  .nav-myhome{background:url(../images/ME-logo.png) no-repeat;height:191px;width:230px}
- .nav-induction{background:url(../images/induction.png) 0 0 no-repeat;height:60px;width:221px}
-   .nav-future{background:url(../images/futureprofile.png) 0 0 no-repeat;height:60px;width:221px}
- .nav-colosseum{background:url(../images/colosseum.png) 0 0 no-repeat;height:65px;width:221px}
- .nav-crusades{background:url(../images/crusades.png) 0 0 no-repeat;height:65px;width:221px}
-      .nav-community{background:url(../images/community.png) 0 0 no-repeat;height:67px;width:221px}
-   .nav-maximizeu{background:url(../images/maximizeu.png) 0 0 no-repeat;height:67px;width:221px}
-   .nav-faq{background:url(../images/faq.png) 0 0 no-repeat;height:67px;width:221px}
-   .nav-induction:hover{background:url(../images/induction.png) -215px 0 no-repeat;height:60px;width:221px}
-   .nav-future:hover{background:url(../images/futureprofile.png) -215px 0 no-repeat;height:60px;width:221px}
- .nav-colosseum:hover{background:url(../images/colosseum.png) -215px 0 no-repeat;height:65px;width:221px}
- .nav-crusades:hover{background:url(../images/crusades.png) -215px 0 no-repeat;height:65px;width:221px}
-      .nav-community:hover{background:url(../images/community.png) -215px 0 no-repeat;height:67px;width:221px}
-   .nav-maximizeu:hover{background:url(../images/maximizeu.png)-215px 0 no-repeat;height:67px;width:221px}
-   .nav-faq:hover{background:url(../images/faq.png) -215px 0 no-repeat;height:67px;width:221px}
+ .nav-induction{background:url(../images/nav-menu/induction.png) 0 0 no-repeat;height:60px;width:221px}
+   .nav-future{background:url(../images/nav-menu/vision.png) 0 0 no-repeat;height:60px;width:221px}
+ .nav-colosseum{background:url(../images/nav-menu/colosseum.png) 0 0 no-repeat;height:65px;width:221px}
+ .nav-crusades{background:url(../images/nav-menu/crusades.png) 0 0 no-repeat;height:65px;width:221px}
+      .nav-community{background:url(../images/nav-menu/community.png) 0 0 no-repeat;height:67px;width:221px}
+   .nav-maximizeu{background:url(../images/nav-menu/maximizeu.png) 0 0 no-repeat;height:67px;width:221px}
+   .nav-faq{background:url(../images/nav-menu/faq.png) 0 0 no-repeat;height:67px;width:221px}
+   .nav-induction:hover{background:url(../images/nav-menu/induction.png) -215px 0 no-repeat;height:60px;width:221px}
+   .nav-future:hover{background:url(../images/nav-menu/futureprofile.png) -215px 0 no-repeat;height:60px;width:221px}
+ .nav-colosseum:hover{background:url(../images/nav-menu/colosseum.png) -215px 0 no-repeat;height:65px;width:221px}
+ .nav-crusades:hover{background:url(../images/nav-menu/crusades.png) -215px 0 no-repeat;height:65px;width:221px}
+      .nav-community:hover{background:url(../images/nav-menu/community.png) -215px 0 no-repeat;height:67px;width:221px}
+   .nav-maximizeu:hover{background:url(../images/nav-menu/maximizeu.png)-215px 0 no-repeat;height:67px;width:221px}
+   .nav-faq:hover{background:url(../images/nav-menu/faq.png) -215px 0 no-repeat;height:67px;width:221px}
 
  #menu-nfx{margin-left:0}
  #menu-nfx-1 li.current-menu-item{background-position:-442px 0}
