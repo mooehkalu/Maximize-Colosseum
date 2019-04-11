@@ -261,7 +261,8 @@ format('embedded-opentype'),url(/templates/fonts/pt_serif-webfont.woff2) format(
  overflow:hidden;
 }
 
- .fx-section-title{padding-top:10px;font-weight:700;text-transform:capitalize}
+ .fx-section-title{padding-top:10px;font-size: 20px;font-weight:700;text-transform:capitalize}
+
  .nfx-background{background:#d9d9d9}
  .nf-header-top{height:181px;z-index:1}
  .nf-top-row{background:#0c100f none repeat scroll 0 0;
@@ -1227,19 +1228,33 @@ box-shadow:         0px 0px 30px 0px rgba(255,219,0, 0.8);
  .bg-top-cont{top:-10px}.page-template-nfx-my-character-public .bg-bottom-cont{bottom:-10px}
  .page-template-nfx-my-character-public .nfx-background-mychar-second{top:-265px}
   .page-template-nfx-my-character-public 
- .fx-inner-sections{min-height:634px;top:5px}.page-template-nfx-epic-quest .bg-progress-big,.page-template-nfx-epic-quest 
- .xp-bar{top:69px}.page-template-nfx-epic-quest .fx-content-title{top:-12px}
+ .fx-inner-sections{min-height:634px;top:5px}
+  .page-template-nfx-epic-quest 
+  .bg-progress-big,.page-template-nfx-epic-quest 
+ .xp-bar{top:69px}
+  .page-template-nfx-epic-quest 
+  .fx-content-title{top:-100px}
   
  .fx-content-title{background:url(templates/images/header-module.png) center center no-repeat}
   
  .fx-content-section{}
   
- .fx-content-title h3{text-align:center}#charWelcomeModal .modal-dialog{width:90%;margin-left:5%}
- .page-template-nfx-my-character-public .bg-bottom-cont{bottom:-16px}.page-template-nfx-my-character-public 
- .nf-char-view{min-height:690px}.page-template-nfx-my-character-public .nf-char-info-cont .name-slogan 
- .col-sm-12{width:336px;height:72px;margin:15px 0 9px 53px}.page-template-nfx-my-character-public 
- .nf-char-info-cont h2{font-size:24px;margin-top:15px}.page-template-nfx-my-character-public 
- .nf-char-info-cont h3{font-size:19px}.page-template-nfx-my-character-public 
+ .fx-content-title h3{text-align:center}
+  #charWelcomeModal 
+  .modal-dialog{width:90%;margin-left:5%}
+ .page-template-nfx-my-character-public 
+  .bg-bottom-cont{bottom:-16px}
+  .page-template-nfx-my-character-public 
+ .nf-char-view{min-height:690px}
+  .page-template-nfx-my-character-public 
+  .nf-char-info-cont 
+  .name-slogan 
+ .col-sm-12{width:336px;height:72px;margin:15px 0 9px 53px}
+  .page-template-nfx-my-character-public 
+ .nf-char-info-cont h2{font-size:24px;margin-top:15px}
+  .page-template-nfx-my-character-public 
+ .nf-char-info-cont h3{font-size:19px}
+  .page-template-nfx-my-character-public 
  .character-progress{width:320px;margin-left:-156px;margin-top:0;height:105px}
  .page-template-nfx-my-character-public .nf-char-info-cont .short{font-size:14px;margin-left:64px;margin-top:4px;width:175px}
  .page-template-nfx-my-character-public .character-progress .person-image img{left:24px;top:20px;width:91px}
