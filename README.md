@@ -1,2 +1,2 @@
 # Maximize-Colosseum
-Theme color: #d7a856
+Theme color: yellowinsh #d7a856
