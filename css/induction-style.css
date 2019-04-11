@@ -342,9 +342,10 @@ format('embedded-opentype'),url(/templates/fonts/pt_serif-webfont.woff2) format(
  }
  
  .nfx-epic-quest-wrap 
- .fx-content-title{background:0 0;color:#d7a856;font-family:pt_serifregular,sans-serif;font-size:32px;
+ .fx-content-title{background:0 0;color:#ffffff;font-family:pt_serifregular,sans-serif;font-size:32px;
  font-weight:600;padding:15px 0;position:absolute;right:0;text-align:center;text-transform:uppercase;
  top:78px;width:100%;z-index:100}
+
  .public-switcher-wrap{position:relative;float:right;width:65px;
  right:-25px;top:-10px;text-indent:0}.public-switcher-wrap 
  .tit{margin-bottom:5px}.public-switcher-wrap 
