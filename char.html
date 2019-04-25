@@ -7,11 +7,12 @@
 
 <script>
  
-$(document).ready(function(){
-$(".flip").click(function(){
-$(".panel").toggle("slow");
+$(document).ready(function() {
+  $(".flip").click(function() {
+    $(this).next(".panel").slideToggle("slow");
+  });
 });
-});
+ 
 $(document).ready(function(){
 $(".flip2").click(function(){
 $(".panel2").toggle();
