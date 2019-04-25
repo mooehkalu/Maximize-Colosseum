@@ -1,94 +1,47 @@
+<!DOCTYPE html>
+<html>
 <head>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-</head>   
-<div id="flippy">
- <div class="bg">
-  </div>
-  
-    </div>
-<div id="flippanel">
-<div class="texty"> 
- <div class="row">
-    <div class="col-sm-3 weapon">
-<img src="https://mooproject.github.io/menuproject.github.io/EntreprenuerWeapon.png">
-</div>
-    <div class="col-sm-4 weapon">Paragraph goes here
-</div>  
-</div>
-</div>	
-</div>
-<div id="flippy">
- <div class="bg">
-  </div>
-  
-    </div>
-<div id="flippanel">
-<div class="texty"> 
- <div class="row">
-    <div class="col-sm-3 weapon">
-<img src="https://mooproject.github.io/menuproject.github.io/EntreprenuerWeapon.png">
-</div>
-    <div class="col-sm-4 weapon">Paragraph goes here
-</div>  
-</div>
-</div>	
-</div>
-<style>
-.weapon {margin-left: 200px;}
-.weapon img{width: 300px;}
-.texty {
-   background-color: #cc9966;
-    background: url(https://mooproject.github.io/menuproject.github.io/CrusadeCurtainImage.png);
-    background-size: 100% 120%;
-    width: 100%;
-    height: 850px;
-    background-repeat: no-repeat;
-    background-attachment: absolute;
-    background-position: 0px -100px;
-    margin: -50px 0px;
-    padding: 50px;
-}
 
-#flippy {
-    text-align: center;
-}
-
-#flippy .bg {
-        background-color: #cc9966;
-    background: url(https://mooproject.github.io/menuproject.github.io/EntreprenuerCrusadeBar.png);
-    background-size: 100% 100%;
-    width: 100%;
-    height: 20px;
-    background-repeat: no-repeat;
-    background-attachment: absolute;
-    padding: 50px;
-    
-}
-
-
-#flippanel {
-    padding: 1px;
-    text-align: left;
-    background: #f5f5f5;
-    border: 0px;
-}
-
-#flippanel {
-    padding: 24px;
-    display: none;
-}	
-</style>
 <script>
-$(document).ready(function() {
-    $("#flippy").click(function() {
-        $("#flippanel").slideToggle("normal");
-    });
+ 
+$(document).ready(function(){
+$(".flip").click(function(){
+$(".panel").toggle();
 });
+});
+
 </script>
-	
-	
-	
-	
-	
+</head>
+<body>
+<style type="text/css"> 
+div.panel,p.flip
+{
+line-height: 30px;
+margin:auto;
+font-size:16px;
+padding:5px;
+text-align:center;
+background:#555;
+border:solid 1px #666;
+color:#ffffff;
+border-radius:3px;
+user-select:none
+}
+div.panel
+{
+display:none;
+}
+p.flip
+{
+cursor:pointer;
+}
+</style>
+<p class="flip">Click to show/hide panel</p>
+<div class="panel">
+<p>Because time is valuable, we deliver quick and easy learning.</p>
+<p>At W3Schools, you can study everything you need to learn, in an accessible and handy format.</p>
+</div>
+
+</body>
+</html>
