@@ -450,13 +450,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
 #flippanel {
-    padding: 1px;
-    text-align: left;
-    background: #f5f5f5;
+	 background: url(https://mooproject.github.io/menuproject.github.io/CrusadeCurtainImage.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+	    width: 100%;
+    height: 450px;
+    background-color: #f5f5f5;
     border: 0px;
-}
-
-#flippanel {
     padding: 24px;
     display: none;
 }
@@ -714,9 +714,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
  padding:10px;cursor:pointer}
 	
 .quest-body-block{
-  background: url(https://mooproject.github.io/menuproject.github.io/CrusadeCurtainImage.png);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
 height:250px;
 background-color:#fff;
  box-shadow:0 0 7px #a9a9a9;float:left;
@@ -2889,7 +2886,7 @@ button{width:90%;margin:0 auto}
 				<div class="qh-right">
 			<div class="qh-star " data-id="1047221"></div><div class="qh-rect">10px<img style="float: right;" src="https://www.nerdfitness.com/wp-content/themes/NerdFitness/templates/images/graphics-00090.png"></div></div>
 			</div>
-			
+			<div id="flippanel">
 			<div class="quest-body-block">
 				<div class="col-sm-6">
 				<img src="https://mooproject.github.io/menuproject.github.io/EntreprenuerWeapon.png">
@@ -2904,7 +2901,7 @@ button{width:90%;margin:0 auto}
 				<div class="qh-scroll-up">
 		<img src="https://www.nerdfitness.com/wp-content/themes/NerdFitness/templates/images/graphics-00043.png"></div>
 			</div>
-		</div>
+					  </div</div>
 	</div>
 	<!-- End Loop -->	
 <!--?php						
@@ -3241,7 +3238,7 @@ jQuery(function(){
 <script>
 $(document).ready(function() {
     $(".quest-head").click(function() {
-        $(".quest-body-block").slideToggle("normal");
+        $("#flippanel").slideToggle("normal");
     });
 });
 </script>
