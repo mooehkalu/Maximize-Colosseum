@@ -3278,9 +3278,15 @@ jQuery(function(){
  <!-- End Guilds -->
 						    
 <script>
+$(document).ready(function() {
+  $(".flip").click(function() {
+    $(this).next(".panel").slideToggle("slow");
+  });
+});
+						    
 $(document).ready(function(){
-$(".flip").click(function(){
-$(".panel").toggle();
+$(".flip2").click(function(){
+$(".panel2").toggle();
 });
 });								
 </script>						    						   
