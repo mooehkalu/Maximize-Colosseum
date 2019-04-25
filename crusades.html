@@ -3200,7 +3200,442 @@ jQuery(function(){
 </script>
  <!-- End Guilds -->
 						    
-						    						   
+<script>
+	var ajaxurl = 'https://www.nerdfitness.com/wp-admin/admin-ajax.php';	
+	var site_url = 'https://www.nerdfitness.com';		
+	var sound_off_option = '1';		
+	var ajax_nonce = '';	
+	var past_filter = '';
+	var parent_filter = '';
+	var current_filter = '';
+	var star_filter = false;
+	var previous_starred = '';
+	var previous_filter = '';
+	var user_starred_quests = '';	
+	
+	jQuery("#quests_levelup .close").click(function(e){
+		e.preventDefault();
+		jQuery("#quests_levelup").fadeOut();
+	}); 
+
+	jQuery(function() {
+	   // Filter Ajax Load More
+	   var alm_is_animating = false;
+	   jQuery('#alm-filter-nav div').eq(0).addClass('active'); // Set the initial button active state
+	   
+	   // Nav btn click event
+	   jQuery('#alm-filter-nav div div').on('click', function(e){    
+	      e.preventDefault();  
+	      var el = jQuery(this); // Our selected element     
+	      
+	      if(!el.hasClass('active') && !alm_is_animating){ // Check for active and !alm_is_animating  
+	         alm_is_animating = true;   
+	         el.parent().addClass('active').siblings('div').removeClass('active'); // Add active state       
+
+	      	 parent_filter = jQuery(this).parent().attr("data-id");	
+	      	 //console.log('Parent: ' + parent_filter);  
+
+      	 	past_filter = '';
+      	 	previous_filter = '';		      	 	
+      	 	jQuery('.subbtn').removeClass('selected');
+	      	star_filter = false;
+	      	jQuery('#star-filter').removeClass('selected');	  
+	      	jQuery(".search-field").val(null);	    	 
+	      
+	         var data = el.data(), // Get data values from selected menu item
+	             transition = 'fade', // 'slide' | 'fade' | null
+	             speed = '300'; //in milliseconds
+	             
+	         jQuery.fn.almFilter(transition, speed, data); // reset Ajax Load More (transition, speed, data)     
+	      }      
+	   });
+
+	   jQuery('#alm-filter-nav div a').on('click', function(e){    
+	      e.preventDefault();  
+	      var el = jQuery(this); // Our selected element     
+	      
+	      if(!el.hasClass('active') && !alm_is_animating){ // Check for active and !alm_is_animating  
+	         alm_is_animating = true;   
+	         el.parent().addClass('active').siblings('div').removeClass('active'); // Add active state       
+
+      	 	past_filter = '';
+      	 	previous_filter = '';		      	 	
+      	 	jQuery('.subbtn').removeClass('selected');
+	      	star_filter = false;
+	      	jQuery('#star-filter').removeClass('selected');
+	      	jQuery(".search-field").val(null);	
+  
+	         var data = el.data(), // Get data values from selected menu item
+	             transition = 'fade', // 'slide' | 'fade' | null
+	             speed = '300'; //in milliseconds
+
+	        
+	         jQuery.fn.almFilter(transition, speed, data); // reset Ajax Load More (transition, speed, data)     
+	      }      
+	   });	 
+
+		jQuery(".search-field").on('keyup', function (e) {
+		    if (e.keyCode == 13) {
+			    e.preventDefault();  
+			    var el = jQuery(this); // Our selected element
+
+
+	      
+		      	if(!el.hasClass('active') && !alm_is_animating){ // Check for active and !alm_is_animating  
+			         alm_is_animating = true;   
+			         //el.parent().addClass('active').siblings('div').removeClass('active'); // Add active state 
+
+		      	 	past_filter = '';
+		      	 	previous_filter = '';
+		      	 	parent_filter = '';	      	 	
+		      	 	jQuery('.subbtn').removeClass('selected');
+			      	star_filter = false;
+			      	jQuery('#star-filter').removeClass('selected');	
+			      	jQuery('#alm-filter-nav div').removeClass('active');	
+			      	jQuery('#alm-filter-nav div[data-id=all]').addClass('active');	
+
+					 el.data('search', el.val());
+		         	var data = el.data(), // Get data values from selected menu item		
+		            	transition = 'fade', // 'slide' | 'fade' | null
+		            	speed = '300'; //in milliseconds	
+		         	jQuery.fn.almFilter(transition, speed, data); // reset Ajax Load More (transition, speed, data) 
+		        } 	     		        
+		    }
+		});	     
+
+		jQuery("#star-filter").on('click', function (e) {
+			    e.preventDefault();  
+			    var el = jQuery(this); // Our selected element
+		      
+		      	if(!el.hasClass('active') && !alm_is_animating){ // Check for active and !alm_is_animating  
+			         alm_is_animating = true;   
+			         //el.parent().addClass('active').siblings('div').removeClass('active'); // Add active state 
+					 //el.data('search', el.val());
+
+	      	 		 //console.log('Star: ' + star_filter);
+	      	 		 //console.log('Previous Starred: ' + previous_starred); 	
+
+		      	 	past_filter = '';
+		      	 	previous_filter = '';     	 	
+		      	 	jQuery('.subbtn').removeClass('selected');
+		      	 	jQuery(".search-field").val(null);			      	 	      	 	
+
+	      	 		/* if (!previous_starred) {
+			      	 	previous_starred = jQuery(this).attr("data-post--in");	      	 		 	
+	      	 		 }   */
+	      	 		 if (!parent_filter || parent_filter=='' || parent_filter=='all') {
+			      	 	parent_filter = jQuery('#all_quests').attr("data-taxonomy-terms");	      	 		 	
+	      	 		 }  	
+    	 		    	 		   					 
+			      	 if (star_filter == true){
+			      	 	//previous_starred = jQuery(this).attr("data-post--in");
+			      	 	el.data('post--in', '');
+	      	 			el.data('taxonomy-terms', parent_filter);			      	 	
+			      	 	star_filter = false;
+			      	 	el.removeClass('selected');
+			         	var data = el.data(), // Get data values from selected menu item		
+			            	transition = 'fade', // 'slide' | 'fade' | null
+			            	speed = '300'; //in milliseconds	
+			         	jQuery.fn.almFilter(transition, speed, data); // reset Ajax Load More (transition, speed, data) 				      	 	
+			      	 }
+			      	 else {
+		      	 		el.data('taxonomy-terms', parent_filter);			      	 				      	 		      	 	
+				      	el.addClass('selected');
+						var data = {
+							action: 'nfq_get_favorite_quests'
+						};
+						jQuery.post( ajaxurl, data, function( response ) {
+							user_starred_quests = response;
+						    var el = jQuery("#star-filter"); // Our selected element
+				      	 	star_filter = true;
+				      	 	el.data('post--in', user_starred_quests);	
+				         	var data = el.data(), // Get data values from selected menu item		
+				            	transition = 'fade', // 'slide' | 'fade' | null
+				            	speed = '300'; //in milliseconds	
+				         	jQuery.fn.almFilter(transition, speed, data); // reset Ajax Load More (transition, speed, data) 					      	 	
+			      	 	});		
+			      	 }					 
+		        } 
+			             		        
+		});	  
+
+
+	   jQuery('#alm-filter-nav-sub div a').on('click', function(e){    
+	      e.preventDefault();  
+	      var el = jQuery(this); // Our selected element     
+	      
+	      if(!el.hasClass('active') && !alm_is_animating){ // Check for active and !alm_is_animating  
+	         alm_is_animating = true;   
+	         el.parent().addClass('active').siblings('div').removeClass('active'); // Add active state       
+
+	      	star_filter = false;
+	      	jQuery('#star-filter').removeClass('selected');		
+		    jQuery('.subbtn').removeClass('selected');	 
+		   	jQuery(".search-field").val(null);	
+      
+	      	 current_filter = jQuery(this).parent().attr("data-id");
+	      	 //console.log('Past: ' + past_filter);
+	      	 //console.log('Current: ' + current_filter);	 
+  	 		 if (!previous_filter) {
+		      	 	previous_filter = current_filter;	      	 		 	
+	  	 		 }    	      	 
+
+  	 		 //If we're clicking the same one (to remove the filter)     	 
+	      	 if (current_filter == past_filter){
+	      	 	previous_filter = current_filter;
+	      	 	el.data('taxonomy-terms', parent_filter); //Deselecting everything
+	      	 	past_filter = parent_filter; //Sets the filter to general ACADEMY since we're deselecting
+	      	 	el.removeClass('selected');
+	      	 }
+	      	 else {
+	      	 	//el.data('taxonomy-terms', previous_filter);	  
+	      	 	el.data('taxonomy-terms', current_filter);	      	 	
+	      	 	past_filter = current_filter; //This doesn't 
+	      	 	el.addClass('selected');
+	      	 }
+		      	 
+	         var data = el.data(), // Get data values from selected menu item
+	             transition = 'fade', // 'slide' | 'fade' | null
+	             speed = '300'; //in milliseconds
+	             
+	         jQuery.fn.almFilter(transition, speed, data); // reset Ajax Load More (transition, speed, data)     
+	      }      
+	   });	
+	   
+	   jQuery.fn.almFilterComplete = function(){      
+	      alm_is_animating = false; // clear alm_isanimating flag
+	   };
+   });
+
+  jQuery.fn.almComplete = function(alm){
+
+	var allHeads = document.getElementsByClassName("quest-head");	
+	for(var i=0;i<allHeads.length;i++){
+		allHeads[i].onclick = function(){
+			var headParent = jQuery(this).parents('.quests-quests-block');
+			if ( !headParent.hasClass('disabled')){
+				this.parentNode.classList.toggle('opened');
+			}
+			
+		}
+	}	
+	
+	var scrollUp = document.getElementsByClassName("qh-scroll-up");
+	for(var i=0;i<scrollUp.length;i++){
+		scrollUp[i].onclick = function(){
+			this.parentNode.parentNode.classList.remove('opened');
+		}
+	}
+	
+	var allStars = document.getElementsByClassName("qh-star");
+	for(var i=0;i<allStars.length;i++){
+		allStars[i].onclick = function(event){
+			event.stopPropagation();
+			var data = {
+				action: 'nfq_update_user_meta',
+				security: ajax_nonce,				  
+				req: 'favorite_quest',
+				pid: jQuery(this).data("id")
+			};
+			jQuery.post( ajaxurl, data, function( response ) {
+				//alert (response);
+			});				
+			this.classList.toggle('active');
+		}
+	}
+	//jQuery('body').append("<div id='lvl-popup' style="background-image: url('".bloginfo('template_directory'); ."/images/')">Congratulations on leveling up!<a id='close-lvl-popup'>X</a></div>");
+	var allCompleted = document.getElementsByClassName("qh-complete");
+	for(var i=0;i<allCompleted.length;i++){
+		allCompleted[i].onclick = function(){
+			var data = {
+				action: 'nfq_update_user_meta',
+				security: ajax_nonce,				  
+				req: 'complete_quest',
+				pid: jQuery(this).data("id")
+			};
+			jQuery.post( ajaxurl, data, function( response ) {
+				//alert ('Completed: ' + response);
+				var data = JSON.parse(response);
+		        if(jQuery('.small-progress .xp-line .xp-progress').length > 0){
+		            jQuery('.small-progress .xp-line .xp-progress').width(data["progress"] + "%");
+		        }	
+		        if (data["level"]) {
+			        if(jQuery('.small-progress .level').length > 0){
+			            jQuery('.small-progress .level').html(data["level"]);
+			        }
+			        if (data["leveled_up"]) {
+			        	if (sound_off_option) {
+							var audio = new Audio( site_url + '/gained_level.wav');
+							audio.play(); 
+			        	}			        	
+			        	//alert ('Congratulations on leveling up!');
+						jQuery("#quests_levelup").fadeIn();
+						jQuery("#quests_levelup .level_message span").html(data["level"]);
+			        }
+		        }
+		        if(jQuery('.small-progress .nf-info-xp').length > 0){
+		            jQuery('.small-progress .nf-info-xp').html(data["xp"] + ' / ' + data["to_next_level"]);
+		        }			        
+			});				
+			this.classList.toggle('qh-com-done');
+			if(this.classList.contains('qh-com-done')){
+				this.style.backgroundImage = 'url(/wp-content/themes/NerdFitness/templates/images/graphics-00014.png)';
+				//this.parentNode.parentNode.parentNode.parentNode.children[0].children[2].children[1].children[0].src = '/wp-content/themes/NerdFitness/templates/images/graphics-00090.png';
+				jQuery(this).parents('.quests-quests-block').find('.qh-rect img').attr('src','/wp-content/themes/NerdFitness/templates/images/graphics-00090.png');
+				this.innerHTML = 'MARK COMPLETED!';
+			}
+			else{
+				this.style.backgroundImage = 'url(/wp-content/themes/NerdFitness/templates/images/graphics-00031.png)';
+				//this.parentNode.parentNode.parentNode.parentNode.children[0].children[2].children[1].children[0].src = '/wp-content/themes/NerdFitness/templates/images/graphics-00092.png';
+				jQuery(this).parents('.quests-quests-block').find('.qh-rect img').attr('src','/wp-content/themes/NerdFitness/templates/images/graphics-00092.png');
+				this.innerHTML = 'MARK NOT COMPLETE';
+			}
+		}
+
+	}
+
+	jQuery('.nfq-disabled-blocker').click(function(){
+		var unpurchasedTermID = jQuery(this).parents('.quest-block').data('unpurchased-term')
+		var data = {
+				action: 'nfq_ajax_get_acf_popup_content_field',
+				unpurchased_term_id : unpurchasedTermID
+				//security: ajax_nonce,				  
+				//req: 'sound_off'
+			};
+			jQuery.post( ajaxurl, data, function( response ) {
+				jQuery('#nfq-locked-quest-modal .modal-body').html(response.data);
+				jQuery('#nfq-locked-quest-modal').modal('show');
+			});	
+	});
+
+  };
+
+
+	
+	var scrollUp = document.getElementsByClassName("scrollToTop")[0];
+	if(scrollUp){
+		scrollUp.onclick = function(){
+			var scrolled = document.body.scrollTop || document.documentElement.scrollTop;
+			
+			function scrl(){
+				scrolled /= 1.1;
+				if(scrolled < 1)
+					scrolled = 0;
+				
+				
+				window.scrollTo(0,scrolled);
+				
+				if(scrolled)
+					requestAnimationFrame(scrl);
+			}
+			
+			scrl();
+		}
+	}
+	
+	var qq = document.getElementsByClassName("qh-sh")[0];
+	if(qq){
+		qq.onclick = function(){
+			this.parentNode.classList.toggle('active');
+			var hh = this.parentNode.children[0].offsetHeight;
+
+			if(this.parentNode.classList.contains('active')){
+				this.parentNode.children[0].style.height = 0;
+				var self = this;
+				setTimeout(function(){
+					self.parentNode.children[0].style.height = hh+20+'px';
+				},10);
+			}
+			else{
+				this.parentNode.children[0].style.cssText = '';
+			}
+		}
+	}
+	
+	if(document.getElementsByClassName("quest-cats")[0]){
+		var allC = document.getElementsByClassName("quest-cats")[0].children;
+		for(var i=0;i<allC.length;i++){
+			allC[i].onclick = function(){
+				for(var j=0;j<allC.length;j++){
+					allC[j].classList.remove('active');
+				}
+				this.classList.add('active');				
+				//var all_quests = document.getElementsByClassName("quests-quests-block");
+				var clicked_category = jQuery(this).data("id");
+				/*
+				for(var j=0;j<all_quests.length;j++){
+					if (all_quests[j].classList.contains(clicked_category)) {
+						all_quests[j].style.display = '';
+					}
+					else {
+						all_quests[j].style.display = 'none';
+					}					
+				}
+				*/
+
+				var all_subcats = document.getElementsByClassName("quests-quests-block-subcats");
+				for(var j=0;j<all_subcats.length;j++){
+					if (all_subcats[j].classList.contains(clicked_category)) {
+						all_subcats[j].style.display = '';
+					}
+					else {
+						all_subcats[j].style.display = 'none';
+					}					
+				}
+				jQuery("#bread-filter span").text(clicked_category);			
+			}
+		}
+	}
+
+/*	if(document.getElementsByClassName("quests-quests-block-subcats")[0]){
+		var allC = document.getElementsByClassName("quests-quests-block-subcats")[0].children;
+		for(var i=0;i<allC.length;i++){
+			allC[i].onclick = function(){
+				for(var j=0;j<allC.length;j++){
+					allC[j].classList.remove('active');
+				}
+				this.classList.add('active');				
+				var clicked_category = jQuery(this).data("id");
+				jQuery("#bread-filter span").text(clicked_category);			
+			}
+		}
+	}
+*/
+
+	var sound_off_checkbox = jQuery("#sound_off_checkbox");
+	if (sound_off_checkbox) {
+		sound_off_checkbox.onclick = function() {
+			var data = {
+				action: 'nfq_update_user_meta',
+				security: ajax_nonce,				  
+				req: 'sound_off'
+			};
+			jQuery.post( ajaxurl, data, function( response ) {
+
+			});	
+		}		
+	}
+	
+	
+
+
+
+	if( getQueryVariable('quest-cache') != false ){
+		 swal('You were redirected from the Academy so the system can set up your account correctly. This operation is now complete and you can return to the Academy anytime. Thank you for your patience.');
+	}
+	function getQueryVariable(variable)
+	{
+       var query = window.location.search.substring(1);
+       var vars = query.split("&");
+       for (var i=0;i<vars.length;i++) {
+               var pair = vars[i].split("=");
+               if(pair[0] == variable){return pair[1];}
+       }
+       return(false);
+	}
+									
+	
+</script>						    						   
 <script type="text/javascript" src="https://a.optmnstr.com/app/js/api.min.js" data-campaign="jo8gkjx4yq069i2sb0ec" data-user="47412" data-env="production"></script><script type="text/javascript" src="https://a.optmnstr.com/app/js/api.min.js" data-campaign="uvmeftupxwbsxx5bfali" data-user="47412" data-env="production"></script><script type="text/javascript" src="https://a.optmnstr.com/app/js/api.min.js" data-campaign="yqng8mb9dyag2looo577" data-user="47412" data-env="production"></script><script type="text/javascript" src="https://a.optmnstr.com/app/js/api.min.js" data-campaign="nolrux7pvqswvgjeoc3e" data-user="47412" data-env="production"></script><script type="text/javascript" src="https://a.optmnstr.com/app/js/api.min.js" data-campaign="ahwuiqmvskpchmx6sih7" data-user="47412" data-env="production"></script><script type="text/javascript" src="https://a.optmnstr.com/app/js/api.min.js" data-campaign="yvw0hpb6dzhy5sj8ctic" data-user="47412" data-env="production"></script><script type="text/javascript" src="https://a.optmnstr.com/app/js/api.min.js" data-campaign="osl7frtsrjl1quzwrpa9" data-user="47412" data-env="production"></script><script type="text/javascript" src="https://a.optmnstr.com/app/js/api.min.js" data-campaign="ucx50wrmz7nlszvwm4eh" data-user="47412" data-env="production"></script> <script type="text/javascript">
 		var c = document.body.className;
 		c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
