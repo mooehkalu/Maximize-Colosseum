@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
 <script>
  
@@ -10,7 +12,11 @@ $(".flip").click(function(){
 $(".panel").toggle();
 });
 });
-
+$(document).ready(function(){
+$(".flip2").click(function(){
+$(".panel2").toggle();
+});
+});
 </script>
 </head>
 <body>
@@ -26,7 +32,31 @@ color:#ffffff;
 border-radius:3px;
 user-select:none
 }
+div.panel2,p.flip2
+{
+line-height: 30px;
+margin:auto;
+font-size:16px;
+padding:5px;
+text-align:center;
+color:#ffffff;
+border-radius:3px;
+user-select:none
+}
 div.panel
+{
+background: url(https://mooproject.github.io/menuproject.github.io/CrusadeCurtainImage.png);
+    background-size: 100% 100%;
+    width: 100%;
+    position: relative;
+    float: left;
+    height: 300px;
+    box-sizing: border-box;
+margin-top: -34px;
+    
+display:none;
+}
+div.panel2
 {
 background: url(https://mooproject.github.io/menuproject.github.io/CrusadeCurtainImage.png);
     background-size: 100% 100%;
@@ -51,9 +81,31 @@ p.flip
     padding: 10px;
     cursor: pointer;
 }
+p.flip2
+{
+    background-image: url(https://mooehkalu.github.io/Maximize-Colosseum/images/crusades_dashboard/CrusadeHeaderBar.png);
+    background-size: 100% 100%;
+    width: 100%;
+    position: relative;
+    float: left;
+    height: 90px;
+    box-sizing: border-box;
+    padding: 10px;
+    cursor: pointer;
+}
 </style>
 <p class="flip">Click to show/hide panel</p>
 <div class="panel">
+<div class="col-sm-4"style="background-color: blue">
+<img src="https://mooproject.github.io/menuproject.github.io/EntreprenuerWeapon.png" style="width: 100px; height: 70px">
+</div>
+<div class="col-sm-4">
+Because time is valuable, we deliver quick and easy learning.
+</div>
+</div>
+
+<p class="flip2">Click to show/hide panel</p>
+<div class="panel2">
 <p>Because time is valuable, we deliver quick and easy learning.</p>
 <p>At W3Schools, you can study everything you need to learn, in an accessible and handy format.</p>
 </div>
