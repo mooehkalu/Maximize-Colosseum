@@ -1,28 +1,93 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Maximize Excelence</title>
+
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
-#myVideo {
-  position: fixed;
+.myImg img{
+position: absolute;
+width: 98%;
+height: 120%;
+    left: 12px;
+    top: 10px;
+    z-index: -1;
+
+}
+
+video #watchMe {
+position: fixed;
   right: 0;
   bottom: 0;
-   width: 230px;
-    height: 300px;
+   width: 100%;
+    height: 500px;
     object-fit: cover;
+   
+}
+
+body {
+		background-color: black;
+}
+#hideMe {
+    -moz-animation: cssAnimation 0s ease-in 10s forwards;
+    /* Firefox */
+    -webkit-animation: cssAnimation 0s ease-in 10s forwards;
+    /* Safari and Chrome */
+    -o-animation: cssAnimation 0s ease-in 10s forwards;
+    /* Opera */
+    animation: cssAnimation 0s ease-in 10s forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+@keyframes cssAnimation {
+    to {
+        width:0;
+        height:0;
+        overflow:hidden;
+    }
+}
+@-webkit-keyframes cssAnimation {
+    to {
+        width:0;
+        height:0;
+        visibility:hidden;
+    }
 }
 </style>
+
+
 </head>
+
 <body>
 
-<video controls autoplay id="myVideo">
-    <source src="https://mooehkalu.github.io/Maximize-Colosseum/videos/vault-video.webm"></source>
+<div id='hideMe'>
+<center>
+  <video id="watchMe" autoplay="true">
+     <source src="https://mooehkalu.github.io/Maximize-Colosseum/videos/vault-video.webm"></source>
   <source src="https://mooehkalu.github.io/Maximize-Colosseum/videos/vault-video.mp4"></source>
 </video>
+  </center>
+</div>
 
-<script>
+<div class="myImg">
+<img  src="https://mooproject.github.io/menuproject.github.io/InnerVaultFadeToBlank.png" />
+</div>
+<script>	
+	
+var video = document.getElementById('watchMe');
+var overlay = document.getElementById('overlay');
 
+video.addEventListener('ended', function(){
+    overlay.style.display = 'none'; 
+}, false);
+
+$('video').on('ended', function(){
+    $('#overlay').fadeOut();
+});
+	
 </script>
-
 </body>
+
 </html>
