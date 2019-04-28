@@ -2948,7 +2948,7 @@ button{width:90%;margin:0 auto}
 				<img src="https://mooehkalu.github.io/Maximize-Colosseum/images/archetype_guild/ArchetypeButtonColiseum.png">
 				<div class="qh-right">
 			<div class="qh-star " data-id="1047221"></div><div class="qh-rect">10px
-<img class="mark-complete" src="https://mooehkalu.github.io/Maximize-Colosseum/images/crusades-mark/Mark-Not-Complete.png" style="float: right;">
+<img id="mark-complete" src="https://mooehkalu.github.io/Maximize-Colosseum/images/crusades-mark/Mark-Not-Complete.png" style="float: right;">
 			</div></div>
 			</div>
 			<div class="panel quest-body-block">
@@ -2978,7 +2978,7 @@ button{width:90%;margin:0 auto}
 				<p>Entertain night</p>
 				<img src="https://mooehkalu.github.io/Maximize-Colosseum/images/archetype_guild/ArchetypeButtonEntertainment.png">
 				<div class="qh-right"><div class="qh-star " data-id="1047221"></div><div class="qh-rect">10px
-			<img class="mark-complete" src="https://mooehkalu.github.io/Maximize-Colosseum/images/crusades-mark/Mark-Not-Complete.png" style="float: right;">		
+			<img id="mark-complete2" src="https://mooehkalu.github.io/Maximize-Colosseum/images/crusades-mark/Mark-Not-Complete.png" style="float: right;">		
 				</div></div>
 			</div>
 			<div class="panel quest-body-block">
@@ -2989,7 +2989,7 @@ button{width:90%;margin:0 auto}
 				<div style="padding: 0 10px;"><p></p>
 				<p>To complete this crusade, clean the barbell</p>
 <p></p>
-	<button type="button" id="btn" class="btn btn-primary">Mark Completed!</button>
+	<button type="button" id="btn2" class="btn btn-primary">Mark Completed!</button>
 					</div>
 				</div>
 			</div>
@@ -3341,7 +3341,7 @@ $(document).ready(function() {
 						    
 <!-- Begin image swap mark-complete -->						    
 <script>						   
-var picSource = document.getElementByClassName("mark-complete").src;					
+var picSource = document.getElementById("mark-complete").src;					
 var notcomplete = "https://mooehkalu.github.io/Maximize-Colosseum/images/crusades-mark/Mark-Not-Complete.png";
 var completed = "https://mooehkalu.github.io/Maximize-Colosseum/images/crusades-mark/Mark-Completed.png";
 
@@ -3355,9 +3355,14 @@ function changePic() {
 
 document.getElementById("btn").onclick = function() {
   changePic();
-  document.getElementByClassName("mark-complete").src = picSource;					    
+  document.getElementById("mark-complete").src = picSource;						    
 }
-						    						    
+						    
+document.getElementById("btn2").onclick = function() {
+  changePic();
+  document.getElementById("mark-complete2").src = picSource;						    
+}
+						    
 </script>
 <!-- End image swap mark-complete -->						    
 						    
