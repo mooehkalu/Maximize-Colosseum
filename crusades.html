@@ -2989,7 +2989,7 @@ button{width:90%;margin:0 auto}
 				<div style="padding: 0 10px;"><p></p>
 				<p>To complete this crusade, clean the barbell</p>
 <p></p>
-	<button type="button" id="btn2" class="btn btn-primary">Mark Completed!</button>
+	<button type="button" id="btn" class="btn btn-primary">Mark Completed!</button>
 					</div>
 				</div>
 			</div>
@@ -3353,7 +3353,7 @@ function changePic() {
   }
 }
 
-document.getElementByClassName("btn").onclick = function() {
+document.getElementById("btn").onclick = function() {
   changePic();
   document.getElementByClassName("mark-complete").src = picSource;					    
 }
