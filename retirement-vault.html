@@ -7,6 +7,17 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
+.container {
+    height: 10em;
+    position: relative }
+.container h4 {
+    margin: 0;
+    background: yellow;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) }
 .myImg img{
 position: fixed;
 width: 100%;
@@ -66,12 +77,14 @@ background-color: black;
 </video>
   </center>
 </div>
-
+<div class="container">
+<h4>Revenue:</h4>
+</div>
 <div class="myImg">
 <img  src="https://mooproject.github.io/menuproject.github.io/InnerVaultFadeToBlank.png" />
 </div>
+
 <script>	
-	
 var video = document.getElementById('watchMe');
 var overlay = document.getElementById('overlay');
 
