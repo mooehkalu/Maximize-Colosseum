@@ -401,12 +401,12 @@ format('embedded-opentype'),url(/templates/fonts/pt_serif-webfont.woff2) format(
  height:100%;margin-left:-1px}
  
 .induction-title {
-   color: #404040;
-    font-size: 35px;
+  color: #404040;
+    font-size: 30px;
     font-weight: 400;
-    left: 123px;
+    left: -50;
     position: absolute;
-    top: 115px;
+    top: 120px;
     width: 500px;
 }
 
