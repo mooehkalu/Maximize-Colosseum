@@ -1394,12 +1394,12 @@ iframe {
   }
 
 .induction-title {
-color: #404040;
-    font-size: 24px;
+   color: #404040;
+   font-size: 18px;
     font-weight: 30;
-    left: 123px;
+    left: 50px;
     position: absolute;
-    top: -143px;
+    top: -138;
     width: 100%;
  }
 
@@ -1509,17 +1509,7 @@ color: #404040;
  .formidable-treasure{margin-top:-110px;width:140px}
  .treasure img{width:120px;margin-top:-91px}}
  @media only screen and (min-width:450px) and (max-width:595px){
- 
- .induction-title {
- color:#404040;
-  font-size:24px;
-  font-weight:40; 
-  left:123px;
- position:absolute;
-  top:-143px;
-  width:100%;
-  z-index:300
- }
+
   .vault-image{width:140px;height:100px;margin-left: 320px;}
  .vault-image span{font-size:28px}
  .vault-image b{font-size:35px}
@@ -1542,12 +1532,12 @@ color: #404040;
  .container{max-width:310px}
  
  .induction-title {
- color:#404040;
-     font-size: 22px;
+    color: #404040;
+    font-size: 14px;
     font-weight: 20;
-    left: 142px;
+    left: 80px;
     position: absolute;
-    top: -140px;
+    top: -136px;
     width: 100%;
     z-index: 300;
  }
