@@ -404,7 +404,7 @@ format('embedded-opentype'),url(/templates/fonts/pt_serif-webfont.woff2) format(
   color: #404040;
     font-size: 30px;
     font-weight: 400;
-    left: -50;
+    left: -40px;
     position: absolute;
     top: 120px;
     width: 500px;
