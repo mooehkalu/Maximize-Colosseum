@@ -126,11 +126,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div>1</div>
 -->
 </div>
-  <div class="progress" id="blips" >
-          <div class="xp-progress" role="progressbar" style="width:10%">
-            <span class="sr-only"></span>
-          </div>
-        </div>
+<div id="blips" >
+<div class="xp-progress" style="width:10%">
+</div>
+</div>
 	
 <div class="nf-info">
 
@@ -2978,7 +2977,7 @@ button{width:90%;margin:0 auto}
 <p></p>
 		
 <label id="s11id" style="cursor:pointer;">
-  <input type="checkbox"  value="check" style="display:none;">
+  <input type="checkbox" style="display:none;">
   <button class="disable btn btn-primary">Mark Complete!</button>
 </label>
 		</div>
@@ -3417,7 +3416,8 @@ document.getElementById("btn9").onclick = function() {
 <!-- End image swap mark-complete -->						    
 
 						   
-<!-- begin progress with button click -->	
+<!-- begin progress with button click -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>						   
 <script>
 // Code goes here
 jQuery(document).ready(function($){
