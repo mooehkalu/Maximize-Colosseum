@@ -126,9 +126,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div>1</div>
 -->
 </div>
-<div class="xp-line">
-<div class="xp-progress" style="width: 20%"></div>
-</div>
+  <div class="progress" id="blips" >
+          <div class="xp-progress" role="progressbar" style="width:10%">
+            <span class="sr-only"></span>
+          </div>
+        </div>
+	
 <div class="nf-info">
 
 <span class="nf-info-xp">
@@ -513,6 +516,20 @@ div.panel
     top: 55px;
     z-index: 1;
 }	
+/* checkbox visible for button */	 
+.disable{pointer-events:fill}
+label{position:relative}
+label:after{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+}
 	 	 
  font-family:pt_serifregular,sans-serif;font-size:32px;font-weight:600}
  .bg-top-cont{position:absolute;top:-14px;
@@ -2959,7 +2976,11 @@ button{width:90%;margin:0 auto}
 				<div style="padding: 0 10px;"><p></p>
 				<p>To complete this crusade, clean the barbell</p>
 <p></p>
-		<button type="checkbox" id="btn" class="btn btn-primary">Mark Completed!</button>
+		
+<label id="s11id" style="cursor:pointer;">
+  <input type="checkbox"  value="check" style="display:none;">
+  <button class="disable btn btn-primary">Mark Complete!</button>
+</label>
 		</div>
 		</div>
 		</div>
@@ -3394,7 +3415,50 @@ document.getElementById("btn9").onclick = function() {
 						    
 </script>
 <!-- End image swap mark-complete -->						    
-						    
+
+						   
+<!-- begin progress with button click -->	
+<script>
+// Code goes here
+jQuery(document).ready(function($){
+    var progress = 10;
+
+    $("#section1id").click(function(){
+        $("#section1").toggle();
+    });
+    $("#section2id").click(function(){
+        $("#section2").toggle();
+    });
+
+
+    $("#s11id input").on('change', function(){
+        if ($("#s11id input").is(":checked") == true) {
+        progress = progress+5;
+        $('#blips > .xp-progress').attr("style","width:" + progress + "%");
+        }
+        else if ($("#s11id input").is(":checked") == false) {
+        progress = progress-5;
+        $('#blips > .xp-progress').attr("style","width:" + progress + "%");
+        }
+    });
+    
+ 
+    $("#s21id input").on('change', function(){
+        if ($("#s21id input").is(":checked") == true) {
+        
+        progress = progress+5;
+        $('#blips > .xp-progress').attr("style","width:" + progress + "%");
+        }
+        else if ($("#s21id input").is(":checked") == false) {
+       
+        progress = progress-5;
+        $('#blips > .xp-progress').attr("style","width:" + progress + "%");
+        }
+    });
+
+
+});
+</script>
 <!-- End dropdown background crusades bar -->						    
 <script type="text/javascript" src="https://a.optmnstr.com/app/js/api.min.js" data-campaign="jo8gkjx4yq069i2sb0ec" data-user="47412" data-env="production"></script><script type="text/javascript" src="https://a.optmnstr.com/app/js/api.min.js" data-campaign="uvmeftupxwbsxx5bfali" data-user="47412" data-env="production"></script><script type="text/javascript" src="https://a.optmnstr.com/app/js/api.min.js" data-campaign="yqng8mb9dyag2looo577" data-user="47412" data-env="production"></script><script type="text/javascript" src="https://a.optmnstr.com/app/js/api.min.js" data-campaign="nolrux7pvqswvgjeoc3e" data-user="47412" data-env="production"></script><script type="text/javascript" src="https://a.optmnstr.com/app/js/api.min.js" data-campaign="ahwuiqmvskpchmx6sih7" data-user="47412" data-env="production"></script><script type="text/javascript" src="https://a.optmnstr.com/app/js/api.min.js" data-campaign="yvw0hpb6dzhy5sj8ctic" data-user="47412" data-env="production"></script><script type="text/javascript" src="https://a.optmnstr.com/app/js/api.min.js" data-campaign="osl7frtsrjl1quzwrpa9" data-user="47412" data-env="production"></script><script type="text/javascript" src="https://a.optmnstr.com/app/js/api.min.js" data-campaign="ucx50wrmz7nlszvwm4eh" data-user="47412" data-env="production"></script> <script type="text/javascript">
 		var c = document.body.className;
