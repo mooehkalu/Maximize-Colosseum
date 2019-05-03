@@ -3347,8 +3347,13 @@ jQuery(function(){
               jQuery('#Guilds'+$(this).attr('target')).show();
         });
 });	
-
-// Code goes here
+						    
+$(document).ready(function() {
+  $(".flip").click(function() {
+    $(this).next(".panel").slideToggle("fast");
+  });
+});
+						    
 jQuery(document).ready(function($){
     var progress = 10;
 
@@ -3384,19 +3389,13 @@ jQuery(document).ready(function($){
         $('#blips > .xp-progress').attr("style","width:" + progress + "%");
         }
     });
-
-
 });						    
 </script>
  <!-- End Guilds -->
 
 <!-- Begin dropdown background crusades bar -->						    
 <script>
-$(document).ready(function() {
-  $(".flip").click(function() {
-    $(this).next(".panel").slideToggle("fast");
-  });
-});
+
 						    						    
 </script>
 						    
