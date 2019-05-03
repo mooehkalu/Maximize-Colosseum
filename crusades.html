@@ -3355,11 +3355,7 @@ $(document).ready(function() {
 });
 						    					    
 jQuery(document).ready(function($){
-    var progress = 20;
-var picSource = document.getElementById("mark-complete").src;					
-var notcomplete = "https://mooehkalu.github.io/Maximize-Colosseum/images/crusades-mark/Mark-Not-Complete.png";
-var completed = "https://mooehkalu.github.io/Maximize-Colosseum/images/crusades-mark/Mark-Completed.png";
-						    
+    var progress = 20;						    
     $("#s11id input").on('change', function(){
         if ($("#s11id input").is(":checked") === true) {
         progress = progress+5;
@@ -3370,7 +3366,9 @@ var completed = "https://mooehkalu.github.io/Maximize-Colosseum/images/crusades-
         $('#blips > .xp-progress').attr("style","width:" + progress + "%");
         }
     });
-			
+var picSource = document.getElementById("mark-complete").src;					
+var notcomplete = "https://mooehkalu.github.io/Maximize-Colosseum/images/crusades-mark/Mark-Not-Complete.png";
+var completed = "https://mooehkalu.github.io/Maximize-Colosseum/images/crusades-mark/Mark-Completed.png";			
 function changePic() {
   if (picSource == notcomplete) {
     picSource = completed;
