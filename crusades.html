@@ -127,7 +127,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 -->
 </div>	
 <div class="xp-line">
-<div class="xp-progress" style="width:10%">
+<div class="xp-progress" style="width:20%">
 </div>
 </div>
 	
@@ -172,7 +172,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 -->
 </div>
 <div class="xp-line">
-<div class="xp-progress" style="width:10%">
+<div class="xp-progress" style="width:20%">
 </div>
 </div>
 <div class="nf-info">
@@ -3354,7 +3354,7 @@ $(document).ready(function() {
 });
 						    
 jQuery(document).ready(function($){
-    var progress = 10;
+    var progress = 20;
 var picSource = document.getElementById("mark-complete").src;					
 var notcomplete = "https://mooehkalu.github.io/Maximize-Colosseum/images/crusades-mark/Mark-Not-Complete.png";
 var completed = "https://mooehkalu.github.io/Maximize-Colosseum/images/crusades-mark/Mark-Completed.png";
@@ -3371,7 +3371,25 @@ document.getElementById("btn").onclick = function() {
   changePic();
   document.getElementById("mark-complete").src = picSource;						    
 }
+						  
+
+    $("#s11id input").on('change', function(){
+        if ($("#s11id input").is(":checked") == true) {
+        progress = progress+5;
+        $('#blips > .xp-progress').attr("style","width:" + progress + "%");
+        }
+        else if ($("#s11id input").is(":checked") == false) {
+        progress = progress-5;
+        $('#blips > .xp-progress').attr("style","width:" + progress + "%");
+        }
+    });
+  
+});
+
+
 						    
+</script>
+ <!-- End Guilds -->
 document.getElementById("btn2").onclick = function() {
   changePic();
   document.getElementById("mark-complete2").src = picSource;						    
@@ -3405,25 +3423,6 @@ document.getElementById("btn9").onclick = function() {
   changePic();
   document.getElementById("mark-complete9").src = picSource;						    
 } 
-
-    $("#s11id input").on('change', function(){
-        if ($("#s11id input").is(":checked") == true) {
-        progress = progress+5;
-        $('#blips > .xp-progress').attr("style","width:" + progress + "%");
-        }
-        else if ($("#s11id input").is(":checked") == false) {
-        progress = progress-5;
-        $('#blips > .xp-progress').attr("style","width:" + progress + "%");
-        }
-    });
-  
-});
-
-
-						    
-</script>
- <!-- End Guilds -->
-
 <!-- Begin dropdown background crusades bar -->						    
 <script>
 
