@@ -128,8 +128,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 -->
 </div>	
 <div id="blips" class="xp-line">
-<div class="xp-progress" role="progressbar" style="width:20%">10%
-<span class="sr-only"></span>
+<div class="xp-progress" role="progressbar" style="width:20%">
+<span class="sr-only">10%</span>
 </div>
 </div>
 	
@@ -174,8 +174,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 -->
 </div>
 <div id="blips" class="xp-line">
-<div class="xp-progress" role="progressbar" style="width:20%">10%
-<span class="sr-only"></span>
+<div class="xp-progress" role="progressbar" style="width:20%">
+<span class="sr-only">10%</span>
 </div>
 </div>
 <div class="nf-info">
@@ -3357,20 +3357,11 @@ $(document).ready(function() {
 });
 						    					    
 jQuery(document).ready(function($){
-    var progress = 20;						    
-    $("#s11id input").on('change', function(){
-        if ($("#s11id input").is(":checked") === true) {
-        progress = progress+5;
-        $('#blips > .xp-progress').attr("style","width:" + progress + "%");
-        }
-        else if ($("#s11id input").is(":checked") === false) {
-        progress = progress-5;
-        $('#blips > .xp-progress').attr("style","width:" + progress + "%");
-        }
-    });
+var progress = 20;
 var picSource = document.getElementById("mark-complete").src;					
 var notcomplete = "https://mooehkalu.github.io/Maximize-Colosseum/images/crusades-mark/Mark-Not-Complete.png";
-var completed = "https://mooehkalu.github.io/Maximize-Colosseum/images/crusades-mark/Mark-Completed.png";			
+var completed = "https://mooehkalu.github.io/Maximize-Colosseum/images/crusades-mark/Mark-Completed.png";		    
+
 function changePic() {
   if (picSource == notcomplete) {
     picSource = completed;
@@ -3382,8 +3373,21 @@ function changePic() {
 document.getElementById("btn").onclick = function() {
   changePic();
   document.getElementById("mark-complete").src = picSource;						    
-}			
-  document.getElementById("btn2").onclick = function() {
+}
+
+    $("#s11id input").on('change', function(){
+        if ($("#s11id input").is(":checked") === true) {
+        progress = progress+5;
+        $('#blips > .xp-progress').attr("style","width:" + progress + "%");
+        }
+        else if ($("#s11id input").is(":checked") === false) {
+        progress = progress-5;
+        $('#blips > .xp-progress').attr("style","width:" + progress + "%");
+        }
+    });
+ 
+
+document.getElementById("btn2").onclick = function() {
   changePic();
   document.getElementById("mark-complete").src = picSource;						    
 }
