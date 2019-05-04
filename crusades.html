@@ -3097,8 +3097,10 @@ Mark Completed!
 				<div style="padding: 0 10px;"><p></p>
 				<p>To complete this crusade, clean the barbell</p>
 <p></p>
-				 <button type="button" id="btn5" class="btn btn-primary">Mark Completed!</button>
-					</div>
+<label id="pg5" class="btn btn-primary" style="text-transform: none;">
+Mark Completed!
+<input type="checkbox" id="btn5" style="display:none;">
+</label>					</div>
 				</div>
 			</div>
 		</div>
@@ -3128,8 +3130,10 @@ Mark Completed!
 				<p>To complete this crusade, clean the barbell</p>
 <p></p>
 					
-				<button type="button" id="btn6" class="btn btn-primary">Mark Completed!</button>
-					</div>
+<label id="pg6" class="btn btn-primary" style="text-transform: none;">
+Mark Completed!
+<input type="checkbox" id="btn6" style="display:none;">
+</label>					</div>
 				</div>
 			</div>
 		</div>
@@ -3159,8 +3163,10 @@ Mark Completed!
 				<p>To complete this crusade, clean the barbell</p>
 <p></p>
 					
-				<button type="button" id="btn7" class="btn btn-primary">Mark Completed!</button>
-					</div>
+<label id="pg7" class="btn btn-primary" style="text-transform: none;">
+Mark Completed!
+<input type="checkbox" id="btn7" style="display:none;">
+</label>					</div>
 				</div>
 			</div>
 		</div>
@@ -3190,8 +3196,10 @@ Mark Completed!
 				<div style="padding: 0 10px;"><p></p>
 				<p>To complete this crusade, clean the barbell</p>
 <p></p>
-					<button type="button" id="btn8" class="btn btn-primary">Mark Completed!</button>
-					</div>
+<label id="pg8" class="btn btn-primary" style="text-transform: none;">
+Mark Completed!
+<input type="checkbox" id="btn8" style="display:none;">
+</label>					</div>
 				</div>
 			</div>
 		</div>
@@ -3220,8 +3228,10 @@ Mark Completed!
 				<div style="padding: 0 10px;"><p></p>
 				<p>To complete this crusade, clean the barbell</p>
 <p></p>
-					  <button type="button" id="btn9" class="btn btn-primary">Mark Completed!</button>
-					</div>
+<label id="pg9" class="btn btn-primary" style="text-transform: none;">
+Mark Completed!
+<input type="checkbox" id="btn9" style="display:none;">
+</label>					</div>
 				</div>
 			</div>
 		</div>
@@ -3382,7 +3392,27 @@ document.getElementById("btn4").onclick = function() {
   var imgSrc=document.getElementById("mark-complete4").src;
   document.getElementById("mark-complete4").src = changePic(imgSrc);	
 }
-
+document.getElementById("btn5").onclick = function() {
+  var imgSrc=document.getElementById("mark-complete5").src;
+  document.getElementById("mark-complete5").src = changePic(imgSrc);	
+}
+document.getElementById("btn6").onclick = function() {
+  var imgSrc=document.getElementById("mark-complete6").src;
+  document.getElementById("mark-complete6").src = changePic(imgSrc);	
+}
+document.getElementById("btn7").onclick = function() {
+  var imgSrc=document.getElementById("mark-complete7").src;
+  document.getElementById("mark-complete7").src = changePic(imgSrc);	
+}
+document.getElementById("btn8").onclick = function() {
+  var imgSrc=document.getElementById("mark-complete8").src;
+  document.getElementById("mark-complete8").src = changePic(imgSrc);	
+}
+document.getElementById("btn9").onclick = function() {
+  var imgSrc=document.getElementById("mark-complete9").src;
+  document.getElementById("mark-complete9").src = changePic(imgSrc);	
+}						    
+						    
     $("#pg1 input").on('change', function(){
         if ($("#pg1 input").is(":checked") === true) {
         progress = progress+5;
@@ -3426,7 +3456,56 @@ document.getElementById("btn4").onclick = function() {
         $('#blips > .xp-progress').attr("style","width:" + progress + "%");
         }
     });
-
+ $("#pg5 input").on('change', function(){
+        if ($("#pg5 input").is(":checked") === true) {
+        progress = progress+5;
+        $('#blips > .xp-progress').attr("style","width:" + progress + "%");
+        }
+        else if ($("#pg5 input").is(":checked") === false) {
+        progress = progress-5;
+        $('#blips > .xp-progress').attr("style","width:" + progress + "%");
+        }
+    });
+$("#pg6 input").on('change', function(){
+        if ($("#pg6 input").is(":checked") === true) {
+        progress = progress+5;
+        $('#blips > .xp-progress').attr("style","width:" + progress + "%");
+        }
+        else if ($("#pg6 input").is(":checked") === false) {
+        progress = progress-5;
+        $('#blips > .xp-progress').attr("style","width:" + progress + "%");
+        }
+    });
+ $("#pg7 input").on('change', function(){
+        if ($("#pg7 input").is(":checked") === true) {
+        progress = progress+5;
+        $('#blips > .xp-progress').attr("style","width:" + progress + "%");
+        }
+        else if ($("#pg7 input").is(":checked") === false) {
+        progress = progress-5;
+        $('#blips > .xp-progress').attr("style","width:" + progress + "%");
+        }
+    });
+ $("#pg8 input").on('change', function(){
+        if ($("#pg8 input").is(":checked") === true) {
+        progress = progress+5;
+        $('#blips > .xp-progress').attr("style","width:" + progress + "%");
+        }
+        else if ($("#pg8 input").is(":checked") === false) {
+        progress = progress-5;
+        $('#blips > .xp-progress').attr("style","width:" + progress + "%");
+        }
+    });
+ $("#pg9 input").on('change', function(){
+        if ($("#pg9 input").is(":checked") === true) {
+        progress = progress+5;
+        $('#blips > .xp-progress').attr("style","width:" + progress + "%");
+        }
+        else if ($("#pg9 input").is(":checked") === false) {
+        progress = progress-5;
+        $('#blips > .xp-progress').attr("style","width:" + progress + "%");
+        }
+    });
 
 });						    						    
 </script>
