@@ -3032,7 +3032,10 @@ Mark Completed!
 				<div style="padding: 0 10px;"><p></p>
 				<p>To complete this crusade, clean the barbell</p>
 <p></p>
-				<button type="button" id="btn3" class="btn btn-primary">Mark Completed!</button>					
+<label id="pg3" class="btn btn-primary" style="text-transform: none;">
+Mark Completed!
+<input type="checkbox" id="btn3" style="display:none;">
+</label>									
 					 </div>
 				</div>
 			</div>
@@ -3062,8 +3065,10 @@ Mark Completed!
 				<div style="padding: 0 10px;"><p></p>
 				<p>To complete this crusade, clean the barbell</p>
 <p></p>
-				<button type="button" id="btn4" class="btn btn-primary">Mark Completed!</button>					
-					</div>
+<label id="pg4" class="btn btn-primary" style="text-transform: none;">
+Mark Completed!
+<input type="checkbox" id="btn4" style="display:none;">
+</label>					</div>
 				</div>
 			</div>
 		</div>
@@ -3347,32 +3352,83 @@ $(document).ready(function() {
 });
 						    					    
 
-$(function() {
-  var progress = 20;
-  var notcomplete = "https://mooehkalu.github.io/Maximize-Colosseum/images/crusades-mark/Mark-Not-Complete.png";
-  var completed = "https://mooehkalu.github.io/Maximize-Colosseum/images/crusades-mark/Mark-Completed.png";
+$(document).ready(function($){
+  var progress = 20;    
+  var notcomplete = "https://www.w3schools.com/images/picture.jpg";
+  var completed = "https://www.w3schools.com/images/lamp.jpg";		    
 
-  $("#btn, #btn2").click(function() {
-    // Get a reference to the appropriate image based on the id of the pushed button.
-    var $img = this.id === 'btn' ? $("#mark-complete") : $("#mark-complete2");
-    // Toggle the image.
-    if ($img.attr("src") === notcomplete) {
-      $img.attr("src", completed);
+  function changePic(source) {
+    if (source == notcomplete) {
+      return completed;
     } else {
-      $img.attr("src", notcomplete);
+      return notcomplete;
     }
-  });
+  }
+document.getElementById("btn").onclick = function() {  
+  var imgSrc=document.getElementById("mark-complete").src;
+  document.getElementById("mark-complete").src = changePic(imgSrc);	
+}
+document.getElementById("btn2").onclick = function() {
+  var imgSrc=document.getElementById("mark-complete2").src;
+  document.getElementById("mark-complete2").src = changePic(imgSrc);	
+}
+
+document.getElementById("btn3").onclick = function() {
+  var imgSrc=document.getElementById("mark-complete3").src;
+  document.getElementById("mark-complete3").src = changePic(imgSrc);	
+}
+
+document.getElementById("btn4").onclick = function() {
+  var imgSrc=document.getElementById("mark-complete4").src;
+  document.getElementById("mark-complete4").src = changePic(imgSrc);	
+}
+
+    $("#pg1 input").on('change', function(){
+        if ($("#pg1 input").is(":checked") === true) {
+        progress = progress+5;
+        $('#blips > .xp-progress').attr("style","width:" + progress + "%");
+        }
+        else if ($("#pg1 input").is(":checked") === false) {
+        progress = progress-5;
+        $('#blips > .xp-progress').attr("style","width:" + progress + "%");
+        }
+    });
+	
+   $("#pg2 input").on('change', function(){
+        if ($("#pg2 input").is(":checked") === true) {
+        progress = progress+5;
+        $('#blips > .xp-progress').attr("style","width:" + progress + "%");
+        }
+        else if ($("#pg2 input").is(":checked") === false) {
+        progress = progress-5;
+        $('#blips > .xp-progress').attr("style","width:" + progress + "%");
+        }
+    });
+    
+     $("#pg3 input").on('change', function(){
+        if ($("#pg3 input").is(":checked") === true) {
+        progress = progress+5;
+        $('#blips > .xp-progress').attr("style","width:" + progress + "%");
+        }
+        else if ($("#pg3 input").is(":checked") === false) {
+        progress = progress-5;
+        $('#blips > .xp-progress').attr("style","width:" + progress + "%");
+        }
+    });
+
+ $("#pg4 input").on('change', function(){
+        if ($("#pg4 input").is(":checked") === true) {
+        progress = progress+5;
+        $('#blips > .xp-progress').attr("style","width:" + progress + "%");
+        }
+        else if ($("#pg4 input").is(":checked") === false) {
+        progress = progress-5;
+        $('#blips > .xp-progress').attr("style","width:" + progress + "%");
+        }
+    });
 
 
-  $("#pg1 input, #pg2 input").on('change', function() {
-    if ($(this).is(":checked")) {
-      progress = progress + 5;
-    } else {
-      progress = progress - 5;
-    }
-    $('#blips > .xp-progress').css("width", progress + "%");
-  });
-})						    						    
+});						    						    
 </script>
 						    
 
