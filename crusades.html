@@ -134,9 +134,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </div>
 	
 <div class="nf-info">
-
+20
 <span class="nf-info-xp">
-20 </span> /100
+ /100</span> 
 </div>
 <img class="bg-progress-small" src="images/top-character-panel-blank_2.png" alt="progress-bar">
 </div>
@@ -3416,12 +3416,12 @@ document.getElementById("btn9").onclick = function() {
         if ($("#pg1 input").is(":checked") === true) {
         progress = progress+10;
         $('#blips > .xp-progress').attr("style","width:" + progress + "%");
-         $('.nf-info-xp').text(progress);
+         $('.nf-info').text(progress);
         }
         else if ($("#pg1 input").is(":checked") === false) {
         progress = progress-10;
         $('#blips > .xp-progress').attr("style","width:" + progress + "%");
-         $('.nf-info-xp').text(progress);
+         $('.nf-info').text(progress);
         }
     });
 	
