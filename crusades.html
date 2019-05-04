@@ -129,8 +129,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </div>	
 <div id="blips" class="xp-line">
 <div class="xp-progress" role="progressbar" style="width:20%">
-<span class="sr-only">10%</span>
 </div>
+<span class="progress">10%</span>
 </div>
 	
 <div class="nf-info">
@@ -175,8 +175,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </div>
 <div id="blips" class="xp-line">
 <div class="xp-progress" role="progressbar" style="width:20%">
-<span class="sr-only">10%</span>
 </div>
+<span class="progress">10%</span>
 </div>
 <div class="nf-info">
 
@@ -3363,7 +3363,7 @@ $(document).ready(function() {
 						    					    
 
 $(document).ready(function($){
-  var progress = 20;    
+  var progress = 10;    
   var notcomplete = "https://mooehkalu.github.io/Maximize-Colosseum/images/crusades-mark/Mark-Not-Complete.png";
   var completed = "https://mooehkalu.github.io/Maximize-Colosseum/images/crusades-mark/Mark-Completed.png";		    
 
@@ -3415,95 +3415,114 @@ document.getElementById("btn9").onclick = function() {
 						    
     $("#pg1 input").on('change', function(){
         if ($("#pg1 input").is(":checked") === true) {
-        progress = progress+5;
+        progress = progress+10;
         $('#blips > .xp-progress').attr("style","width:" + progress + "%");
+         $('.nf-info-xp').text(progress + "%");
         }
         else if ($("#pg1 input").is(":checked") === false) {
-        progress = progress-5;
+        progress = progress-10;
         $('#blips > .xp-progress').attr("style","width:" + progress + "%");
+         $('.nf-info-xp').text(progress + "%");
         }
     });
 	
    $("#pg2 input").on('change', function(){
         if ($("#pg2 input").is(":checked") === true) {
-        progress = progress+5;
+        progress = progress+10;
         $('#blips > .xp-progress').attr("style","width:" + progress + "%");
+         $('.progress').text(progress + "%");
         }
         else if ($("#pg2 input").is(":checked") === false) {
-        progress = progress-5;
+        progress = progress-10;
         $('#blips > .xp-progress').attr("style","width:" + progress + "%");
+         $('.progress').text(progress + "%");
         }
     });
     
      $("#pg3 input").on('change', function(){
         if ($("#pg3 input").is(":checked") === true) {
-        progress = progress+5;
+        progress = progress+10;
         $('#blips > .xp-progress').attr("style","width:" + progress + "%");
+         $('.progress').text(progress + "%");
         }
         else if ($("#pg3 input").is(":checked") === false) {
-        progress = progress-5;
+        progress = progress-10;
         $('#blips > .xp-progress').attr("style","width:" + progress + "%");
+         $('.progress').text(progress + "%");
         }
     });
 
  $("#pg4 input").on('change', function(){
         if ($("#pg4 input").is(":checked") === true) {
-        progress = progress+5;
+        progress = progress+10;
         $('#blips > .xp-progress').attr("style","width:" + progress + "%");
+         $('.progress').text(progress + "%");
         }
         else if ($("#pg4 input").is(":checked") === false) {
-        progress = progress-5;
+        progress = progress-10;
         $('#blips > .xp-progress').attr("style","width:" + progress + "%");
+         $('.progress').text(progress + "%");
         }
     });
+			
  $("#pg5 input").on('change', function(){
         if ($("#pg5 input").is(":checked") === true) {
-        progress = progress+5;
+        progress = progress+10;
         $('#blips > .xp-progress').attr("style","width:" + progress + "%");
+	$('.progress').text(progress + "%");
         }
         else if ($("#pg5 input").is(":checked") === false) {
-        progress = progress-5;
+        progress = progress-10;
         $('#blips > .xp-progress').attr("style","width:" + progress + "%");
+	$('.progress').text(progress + "%");		
         }
     });
 $("#pg6 input").on('change', function(){
         if ($("#pg6 input").is(":checked") === true) {
-        progress = progress+5;
+        progress = progress+10;
         $('#blips > .xp-progress').attr("style","width:" + progress + "%");
+	$('.progress').text(progress + "%");		
         }
         else if ($("#pg6 input").is(":checked") === false) {
-        progress = progress-5;
+        progress = progress-10;
         $('#blips > .xp-progress').attr("style","width:" + progress + "%");
-        }
+        $('.progress').text(progress + "%");
+	}
     });
  $("#pg7 input").on('change', function(){
         if ($("#pg7 input").is(":checked") === true) {
         progress = progress+5;
         $('#blips > .xp-progress').attr("style","width:" + progress + "%");
+	  $('.progress').text(progress + "%");		
         }
         else if ($("#pg7 input").is(":checked") === false) {
         progress = progress-5;
         $('#blips > .xp-progress').attr("style","width:" + progress + "%");
+	$('.progress').text(progress + "%");
         }
     });
  $("#pg8 input").on('change', function(){
         if ($("#pg8 input").is(":checked") === true) {
         progress = progress+5;
         $('#blips > .xp-progress').attr("style","width:" + progress + "%");
+        $('.progress').text(progress + "%");			
         }
         else if ($("#pg8 input").is(":checked") === false) {
         progress = progress-5;
         $('#blips > .xp-progress').attr("style","width:" + progress + "%");
+        $('.progress').text(progress + "%");			
         }
     });
  $("#pg9 input").on('change', function(){
         if ($("#pg9 input").is(":checked") === true) {
         progress = progress+5;
         $('#blips > .xp-progress').attr("style","width:" + progress + "%");
+        $('.progress').text(progress + "%");			
         }
         else if ($("#pg9 input").is(":checked") === false) {
         progress = progress-5;
         $('#blips > .xp-progress').attr("style","width:" + progress + "%");
+        $('.progress').text(progress + "%");			
         }
     });
 
