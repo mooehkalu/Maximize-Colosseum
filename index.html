@@ -1014,11 +1014,7 @@ jQuery(function(){
         });
 });	
 						    
-$(document).ready(function() {
-  $(".flip").click(function() {
-    $(this).next(".panel").slideToggle("fast");
-  });
-});
+
 						    					    
 $(document).ready(function($){
   var progress = 10;    
@@ -1192,6 +1188,9 @@ $("#pg6 input").on('change', function(){
        $('.nf-info-xp').text(progress + "/100");			
         }
     });
+ $(".flip").click(function() {
+    $(this).next(".panel").slideToggle("fast");
+  });			
 });						    						    
 </script>
 
