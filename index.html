@@ -129,12 +129,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div>EQ</div>
 <div>1</div>
 -->
+</div>	
+<div id="blips" class="xp-line">
+<div class="xp-progress" role="progressbar" style="width:10%">
 </div>
-<div class="xp-line">
-<div class="xp-progress" style="width: 20%"></div>
 </div>
 <div class="nf-info">
-
 <span class="nf-info-xp">
 20 /
 100 </span>
@@ -172,12 +172,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div>EQ</div>
 <div>1</div>
 -->
+</div>	
+<div id="blips" class="xp-line">
+<div class="xp-progress" role="progressbar" style="width:10%">
 </div>
-<div class="xp-line">
-<div class="xp-progress" style="width: 20%"></div>
 </div>
 <div class="nf-info">
-
 <span class="nf-info-xp">
 20 /
 100 </span>
@@ -353,7 +353,40 @@ COMPLETE YOUR INDUCTION
 </div>
 </div>
 </div>
-										      
+<!-- guilds crusades bar -->
+<div id="GuildsColosseum" class="targetGuild quests-quests-block adventurer  all" style="display: ">
+		<div class="quest-block" '="">
+			<div class="quest-head flip q-incomplete" style="position:relative; z-index: 100;">
+				<div class="nfq-disabled-blocker" style="
+					display: none;">
+					<img style="width:39px; height:52px;" src="/wp-content/themes/NerdFitness/images/callout-lock.png">
+				</div>
+				<p>Colosseum</p>
+				<img src="https://mooehkalu.github.io/Maximize-Colosseum/images/archetype_guild/ArchetypeButtonColiseum.png">
+				<div class="qh-right">
+			<div class="qh-star " data-id="1047221"></div><div class="qh-rect">10px
+<img id="mark-complete" src="https://mooehkalu.github.io/Maximize-Colosseum/images/crusades-mark/Mark-Not-Complete.png" style="float: right;">
+			</div></div>
+			</div>
+			<div class="panel quest-body-block">
+				<div class="col-sm-6 weapon">
+				<img src="https://mooehkalu.github.io/Maximize-Colosseum/images/crusades_weapon/ColiseumWeapon.png">
+				</div>
+				<div class="col-sm-6 weapon">
+				<div style="padding: 0 10px;"><p></p>
+				<p>To complete this crusade, clean the barbell</p>
+<p></p>
+		
+<label id="pg1" class="btn btn-primary" style="text-transform: none;">
+Mark Completed!
+<input type="checkbox" id="btn" style="display:none;">
+</label>
+		</div>
+		</div>
+		</div>
+		</div>
+	</div>
+					  
 										      
  <!-- -- Professional Excellence ---->
 <div class="nstp-epic-wrapper">
@@ -881,8 +914,68 @@ float: left;
 
 
 </style>
-<script>
 
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>						 
+jQuery(function(){
+         jQuery('#showall').click(function(){
+               jQuery('.targetGuild').show();
+        });
+        jQuery('.showSingle').click(function(){
+              jQuery('.targetGuild').hide();
+              jQuery('#Guilds'+$(this).attr('target')).show();
+        });
+});	
+						    
+$(document).ready(function() {
+  $(".flip").click(function() {
+    $(this).next(".panel").slideToggle("fast");
+  });
+});
+						    					    
+$(document).ready(function($){
+  var progress = 10;    
+  var notcomplete = "https://mooehkalu.github.io/Maximize-Colosseum/images/crusades-mark/Mark-Not-Complete.png";
+  var completed = "https://mooehkalu.github.io/Maximize-Colosseum/images/crusades-mark/Mark-Completed.png";		    
+var level = 1;
+  var timer = setInterval(function() {
+    if (progress >= (level * 40)) {
+    ++level; $('#level').html("Level "+ level);
+    
+    }  if (progress <= (level * 40)) {
+    --level; $('#level').html("Level "+ level);
+    } else if (level === 2) {
+   swal.fire('Level 2')
+ } else if (level === 3) {
+   swal.fire('Level 3')
+ }
+  }, 100);
+							   
+  function changePic(source) {
+    if (source == notcomplete) {
+      return completed;
+    } else {
+      return notcomplete;
+    }
+  }
+document.getElementById("btn").onclick = function() {  
+  var imgSrc=document.getElementById("mark-complete").src;
+  document.getElementById("mark-complete").src = changePic(imgSrc);	
+}
+		  
+ $("#pg1 input").on('change', function(){
+        if ($("#pg1 input").is(":checked") === true) {
+        progress = progress+10;
+        $('#blips > .xp-progress').attr("style","width:" + progress + "%");
+         $('.nf-info-xp').text(progress + "/100");
+        }
+        else if ($("#pg1 input").is(":checked") === false) {
+        progress = progress-10;
+        $('#blips > .xp-progress').attr("style","width:" + progress + "%");
+         $('.nf-info-xp').text(progress + "/100");
+        }
+    });
+});			
 </script>
 
 <script type="text/javascript" src="https://a.optmnstr.com/app/js/api.min.js" data-campaign="jo8gkjx4yq069i2sb0ec" data-user="47412" data-env="production"></script><script type="text/javascript" src="https://a.optmnstr.com/app/js/api.min.js" data-campaign="uvmeftupxwbsxx5bfali" data-user="47412" data-env="production"></script><script type="text/javascript" src="https://a.optmnstr.com/app/js/api.min.js" data-campaign="yqng8mb9dyag2looo577" data-user="47412" data-env="production"></script><script type="text/javascript" src="https://a.optmnstr.com/app/js/api.min.js" data-campaign="nolrux7pvqswvgjeoc3e" data-user="47412" data-env="production"></script><script type="text/javascript" src="https://a.optmnstr.com/app/js/api.min.js" data-campaign="ahwuiqmvskpchmx6sih7" data-user="47412" data-env="production"></script><script type="text/javascript" src="https://a.optmnstr.com/app/js/api.min.js" data-campaign="yvw0hpb6dzhy5sj8ctic" data-user="47412" data-env="production"></script><script type="text/javascript" src="https://a.optmnstr.com/app/js/api.min.js" data-campaign="osl7frtsrjl1quzwrpa9" data-user="47412" data-env="production"></script><script type="text/javascript" src="https://a.optmnstr.com/app/js/api.min.js" data-campaign="ucx50wrmz7nlszvwm4eh" data-user="47412" data-env="production"></script> <script type="text/javascript">
