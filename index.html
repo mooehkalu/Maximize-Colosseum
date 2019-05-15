@@ -909,10 +909,10 @@ $(document).ready(function() {
 });
 						    					    
 $(document).ready(function($){
-  var progress = 10;    
-  var notcomplete = "https://mooehkalu.github.io/Maximize-Colosseum/images/crusades-mark/Mark-Not-Complete.png";
-  var completed = "https://mooehkalu.github.io/Maximize-Colosseum/images/crusades-mark/Mark-Completed.png";		    
-var level = 1;
+  var notcomplete = "https://www.w3schools.com/images/picture.jpg";
+  var completed = "https://www.w3schools.com/images/lamp.jpg";	
+  var progress = 20;
+ var level = 1;
   var timer = setInterval(function() {
     if (progress >= (level * 40)) {
     ++level; $('#level').html("Level "+ level);
@@ -925,7 +925,8 @@ var level = 1;
    swal.fire('Level 3')
  }
   }, 100);
-							   
+
+
   function changePic(source) {
     if (source == notcomplete) {
       return completed;
@@ -933,25 +934,125 @@ var level = 1;
       return notcomplete;
     }
   }
+
 document.getElementById("btn").onclick = function() {  
   var imgSrc=document.getElementById("mark-complete").src;
   document.getElementById("mark-complete").src = changePic(imgSrc);	
 }
-			    
+document.getElementById("btn2").onclick = function() {
+  var imgSrc=document.getElementById("mark-complete2").src;
+  document.getElementById("mark-complete2").src = changePic(imgSrc);	
+}
+
+document.getElementById("btn3").onclick = function() {
+  var imgSrc=document.getElementById("mark-complete3").src;
+  document.getElementById("mark-complete3").src = changePic(imgSrc);	
+}
+
+document.getElementById("btn4").onclick = function() {
+  var imgSrc=document.getElementById("mark-complete4").src;
+  document.getElementById("mark-complete4").src = changePic(imgSrc);	
+}
+
+document.getElementById("btn5").onclick = function() {
+  var imgSrc=document.getElementById("mark-complete5").src;
+  document.getElementById("mark-complete5").src = changePic(imgSrc);	
+}
+document.getElementById("btn6").onclick = function() {
+  var imgSrc=document.getElementById("mark-complete5").src;
+  document.getElementById("mark-complete6").src = changePic(imgSrc);	
+}
+
     $("#pg1 input").on('change', function(){
         if ($("#pg1 input").is(":checked") === true) {
-        progress = progress+10;
+        progress = progress+20;
         $('#blips > .xp-progress').attr("style","width:" + progress + "%");
-         $('.nf-info-xp').text(progress + "/100");
+         $('.xp-progress').text(progress + "/100");
+        
+         
         }
         else if ($("#pg1 input").is(":checked") === false) {
-        progress = progress-10;
+        progress = progress-20;
         $('#blips > .xp-progress').attr("style","width:" + progress + "%");
-         $('.nf-info-xp').text(progress + "/100");
+         $('.xp-progress').text(progress + "/100");
+         
         }
     });
-			
-});						    						    
+	
+   $("#pg2 input").on('change', function(){
+        if ($("#pg2 input").is(":checked") === true) {
+        progress = progress+20;
+        $('#blips > .xp-progress').attr("style","width:" + progress + "%");
+         $('.xp-progress').text(progress + "/100");
+        }
+        else if ($("#pg2 input").is(":checked") === false) {
+        progress = progress-20;
+        $('#blips > .xp-progress').attr("style","width:" + progress + "%");
+         $('.xp-progress').text(progress + "/100");
+        }
+    });
+    
+     $("#pg3 input").on('change', function(){
+        if ($("#pg3 input").is(":checked") === true) {
+        progress = progress+20;
+        $('#blips > .xp-progress').attr("style","width:" + progress + "%");
+         $('.xp-progress').text(progress + "/100");
+        }
+        else if ($("#pg3 input").is(":checked") === false) {
+        progress = progress-20;
+        $('#blips > .xp-progress').attr("style","width:" + progress + "%");
+         $('.xp-progress').text(progress + "/100");
+        }
+    });
+
+ $("#pg4 input").on('change', function(){
+        if ($("#pg4 input").is(":checked") === true) {
+        progress = progress+20;
+        $('#blips > .xp-progress').attr("style","width:" + progress + "%");
+         $('.xp-progress').text(progress + "/100");
+          
+        }
+        else if ($("#pg4 input").is(":checked") === false) {
+        progress = progress-20;
+        $('#blips > .xp-progress').attr("style","width:" + progress + "%");
+         $('.xp-progress').text(progress + "/100");
+           
+        }
+    });
+    
+     $("#pg5 input").on('change', function(){
+        if ($("#pg5 input").is(":checked") === true) {
+        progress = progress+20;
+        $('#blips > .xp-progress').attr("style","width:" + progress + "%");
+         $('.xp-progress').text(progress + "/100");
+          
+        }
+        else if ($("#pg5 input").is(":checked") === false) {
+        progress = progress-20;
+        $('#blips > .xp-progress').attr("style","width:" + progress + "%");
+         $('.xp-progress').text(progress + "/100");
+           
+        }
+    });
+    $("#pg6 input").on('change', function(){
+        if ($("#pg6 input").is(":checked") === true) {
+        progress = progress+20;
+        $('#blips > .xp-progress').attr("style","width:" + progress + "%");
+         $('.xp-progress').text(progress + "/100");
+          
+        }
+        else if ($("#pg6 input").is(":checked") === false) {
+        progress = progress-20;
+        $('#blips > .xp-progress').attr("style","width:" + progress + "%");
+         $('.xp-progress').text(progress + "/100");
+           
+        }
+    });
+
+});
+
+
+					    						    
 </script>
 
 <script type="text/javascript" src="https://a.optmnstr.com/app/js/api.min.js" data-campaign="jo8gkjx4yq069i2sb0ec" data-user="47412" data-env="production"></script><script type="text/javascript" src="https://a.optmnstr.com/app/js/api.min.js" data-campaign="uvmeftupxwbsxx5bfali" data-user="47412" data-env="production"></script><script type="text/javascript" src="https://a.optmnstr.com/app/js/api.min.js" data-campaign="yqng8mb9dyag2looo577" data-user="47412" data-env="production"></script><script type="text/javascript" src="https://a.optmnstr.com/app/js/api.min.js" data-campaign="nolrux7pvqswvgjeoc3e" data-user="47412" data-env="production"></script><script type="text/javascript" src="https://a.optmnstr.com/app/js/api.min.js" data-campaign="ahwuiqmvskpchmx6sih7" data-user="47412" data-env="production"></script><script type="text/javascript" src="https://a.optmnstr.com/app/js/api.min.js" data-campaign="yvw0hpb6dzhy5sj8ctic" data-user="47412" data-env="production"></script><script type="text/javascript" src="https://a.optmnstr.com/app/js/api.min.js" data-campaign="osl7frtsrjl1quzwrpa9" data-user="47412" data-env="production"></script><script type="text/javascript" src="https://a.optmnstr.com/app/js/api.min.js" data-campaign="ucx50wrmz7nlszvwm4eh" data-user="47412" data-env="production"></script> <script type="text/javascript">
