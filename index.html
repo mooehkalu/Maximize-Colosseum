@@ -568,7 +568,195 @@ Mark Completed!
   </footer>
   <!-- Footer -->
 <style>
+.weapon {
+    width: 250;
+    left: 120;
+    top: 105;
+}
+.weapon img{
+        box-shadow: 5px 9px 9px 1px rgba(0, 0, 0, 0.5);
+}
+.weapon .btn-complete {
+  background-color: #e7e7e7; 
+  color: black;
+  border: none;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
 	
+.info {top: 90px;left: 80px;}
+.panel,.flip
+{
+line-height: 30px;
+margin:auto;
+font-size:16px;
+padding:5px;
+text-align:center;
+color:#ffffff;
+border-radius:3px;
+user-select:none
+}
+div.panel
+{
+    background: url(https://mooproject.github.io/menuproject.github.io/CrusadeCurtainImage.png);
+    background-size: 100% 100%;
+    width: 100%;
+    height: 400px;
+    margin-top: -44px;
+    display: none;
+    float: left;
+    overflow: hidden;
+    box-sizing: border-box;
+    position: relative;
+    opacity: 1;
+    transition: all .35s;
+}
+.flip
+{
+    background-image: url(https://mooehkalu.github.io/Maximize-Colosseum/images/crusades_dashboard/CrusadeHeaderBar.png);
+    background-size: 100% 100%;
+    width: 100%;
+    position: relative;
+    float: left;
+    height: 90px;
+    box-sizing: border-box;
+    padding: 10px;
+    cursor: pointer;
+}
+ /* end dropdown background crusades certain bar image*/
+	
+.my-quests-tit-image {
+    width: 300px;
+    height: 50px;
+    background-size: cover;
+    position: relative;
+    top: -10px;
+    margin: 0 auto;
+    z-index: 100;
+}
+	
+ .nf-title-page{background:#404040;color:#d7a856;min-height: 170px;
+    padding: 10px 50px;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    top: -86px;
+    left: -58px;
+    width: 100%;
+    z-index: 1;}
+ .nf-title-page-h{margin-top:16px;text-indent:116px;
+ 
+.bg-progress-big {
+    left: 0;
+    padding: 0 5px;
+    position: absolute;
+    top: 55px;
+    z-index: 1;
+}
+.quest-head{background-image:url(https://mooehkalu.github.io/Maximize-Colosseum/images/crusades_dashboard/CrusadeHeaderBar.png);	 
+ background-size:100% 100%;width:100%;position:relative;float:left;height:90px;box-sizing:border-box;
+ padding:10px;cursor:pointer}	
+
+.opened 
+ .quest-body-block{height:250px;
+ height:auto;min-height:250px;padding:30px 25px;opacity:1}
+	
+ .qh-complete{
+height:59px;
+ width:100%;
+background-size:cover;
+color:#fff;
+font-style:italic;
+font-size:15px;
+box-sizing:border-box;
+padding:15px 0;
+text-align:center;
+cursor:pointer;
+}
+ 
+.quest-head p{display:inline-block;
+ vertical-align:middle;font-size:17px!important;font-weight:700;margin-left:30px;max-width:56%;margin-top:0;
+ height:100%;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;-webkit-align-items:center;
+ -ms-flex-align:center;align-items:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center}
+	
+ .qh-right{float:right}
+	
+ .qh-rect{width:110px;height:45px;background-color:rgba(120,120,120,.15);margin-top:14px;
+ margin-right:80px;line-height:47px;box-sizing:border-box;padding-left:20px;color:#4d4d4d;font-size:20px;
+ font-weight:700;border-radius:8px}
+.quest-head img{height:70px;float:left;vertical-align:middle;display:inline-block;margin-top: -2px;}
+	
+ .quest-head .qh-rect img{float:right;position:relative;margin-top:-12px;margin-right:-85px}
+	
+ .quest-block{margin-bottom:40px}
+ .quests-bread span{color:#666}
+.quest-cats img{width:110px;position:relative;z-index:2;
+ -webkit-filter:drop-shadow(0px 0px 0px rgba(0,0,0,0.3));transition:all .3s linear}
+	
+ .quest-cats img:hover{background-color: #ccc; -webkit-filter:drop-shadow(0px 0px 8px rgba(0,0,0,0.6))}
+ .quest-cats span{padding:8px 10px;
+ position:absolute;width:90%;left:10%;top:5px;text-align:center;padding-left:30px;
+ 
+ background-image:url(https://nerdfitness.com/wp-content/themes/NerdFitness/wp-content/themes/NerdFitness/templates/images/graphics-00068.png);
+ background-size:cover;color:#e6e6e6;font-weight:700;padding-top:13px}
+ .quest-cats 
+ .col-sm-2{padding:0;white-space:nowrap;
+ cursor:pointer}.quest-cats .col-sm-2.active span{
+ background-image:url(https://nerdfitness.com/wp-content/themes/NerdFitness/wp-content/themes/NerdFitness/templates/images/graphics-00086.png);
+ color:#ffde8d}
+ .xp-bar{height:125px;left:50%;margin-left:-177px;position:absolute;top:-28px;
+ width:354px;z-index:100}
+ .bg-xp-bar{position:absolute;z-index:100}
+ 
+ .class_icon{text-align:center!important}
+ .gen_thumbs p{display:none!important}
+ 
+ 
+ .small-progress 
+ .rank{position:absolute;right:68px;top:51px;width:40px;z-index:200}
+ .small-progress 
+ .rank div{color:#fff;
+ text-align:center;line-height:14px}
+ .small-progress 
+ .rank div:first-child{font-size:14px}
+ .small-progress 
+ .rank div:last-child{font-size:16px;font-weight:700}
+	
+ .small-progress .xp-line {
+    height: 12px;
+    left: 190px;
+    position: absolute;
+    top: 51px;
+    width: 120px;
+    z-index: 300;
+}
+	
+ .small-progress 
+ .xp-line 
+ 
+ 
+ .small-progress 
+ .nf-info{color:#584c36;font-size:10px;font-weight:600;
+ left:186px;position:absolute;top:62px;width:140px;z-index:300}
+ .small-progress .nf-info span{float:right}
+ 
+/* button for mark complete */
+#btn {
+cursor: pointer;	
+}
+  .nf-top-row {
+    background: #0c100f none repeat scroll 0 0;
+    border-bottom: 2px solid #202524;
+    height: 100px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    z-index: 2;
+}					  
+					  
 /* saving by category sections */
 .saving-box-title-offset{
      width: 17%;
