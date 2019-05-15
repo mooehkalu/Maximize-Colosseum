@@ -3362,11 +3362,18 @@ $(document).ready(function($){
   var completed = "https://mooehkalu.github.io/Maximize-Colosseum/images/crusades-mark/Mark-Completed.png";		    
 var level = 1;
   var timer = setInterval(function() {
-    if (progress === (level * 60)) {
-    level++; $('.level').html(level);
-     Swal.fire('Congratualation, You are in the next level')
-    }  
+    if (progress >= (level * 40)) {
+    ++level; $('#level').html("Level "+ level);
+    
+    }  if (progress <= (level * 40)) {
+    --level; $('#level').html("Level "+ level);
+    } else if (level === 2) {
+   swal.fire('Level 2')
+ } else if (level === 3) {
+   swal.fire('Level 3')
+ }
   }, 100);
+
 							   
   function changePic(source) {
     if (source == notcomplete) {
