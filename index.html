@@ -1077,7 +1077,9 @@ document.getElementById("btn9").onclick = function() {
   var imgSrc=document.getElementById("mark-complete9").src;
   document.getElementById("mark-complete9").src = changePic(imgSrc);	
 }						    
-						    
+ $(".flip").click(function() {
+    $(this).next(".panel").slideToggle("fast");
+  });				    
     $("#pg1 input").on('change', function(){
         if ($("#pg1 input").is(":checked") === true) {
         progress = progress+10;
@@ -1188,9 +1190,7 @@ $("#pg6 input").on('change', function(){
        $('.nf-info-xp').text(progress + "/100");			
         }
     });
- $(".flip").click(function() {
-    $(this).next(".panel").slideToggle("fast");
-  });			
+			
 });						    						    
 </script>
 
