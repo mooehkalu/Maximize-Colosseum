@@ -344,7 +344,17 @@ COMPLETE YOUR INDUCTION
     <fieldset>
       <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
     </fieldset>
-	<!-- guilds crusades bar -->
+	
+  </form>					       
+					 	
+</div>
+</div>
+					       
+</div>
+</div>
+</div>
+</div>
+<!-- guilds crusades bar -->
 <div id="GuildsColosseum" class="targetGuild quests-quests-block adventurer  all" style="display: ">
 		<div class="quest-block" '="">
 			<div class="quest-head flip q-incomplete" style="position:relative; z-index: 100;">
@@ -376,17 +386,7 @@ Mark Completed!
 		</div>
 		</div>
 		</div>
-	</div>
-  </form>					       
-					 	
-</div>
-</div>
-					       
-</div>
-</div>
-</div>
-</div>
-									      
+	</div>									      
  <!-- -- Professional Excellence ---->
 <div class="nstp-epic-wrapper">
 <div class="nstp-epic-body ">
@@ -1149,8 +1149,40 @@ document.getElementById("btn").onclick = function() {
   var imgSrc=document.getElementById("mark-complete").src;
   document.getElementById("mark-complete").src = changePic(imgSrc);	
 }
-		  
- $("#pg1 input").on('change', function(){
+document.getElementById("btn2").onclick = function() {
+  var imgSrc=document.getElementById("mark-complete2").src;
+  document.getElementById("mark-complete2").src = changePic(imgSrc);	
+}
+document.getElementById("btn3").onclick = function() {
+  var imgSrc=document.getElementById("mark-complete3").src;
+  document.getElementById("mark-complete3").src = changePic(imgSrc);	
+}
+document.getElementById("btn4").onclick = function() {
+  var imgSrc=document.getElementById("mark-complete4").src;
+  document.getElementById("mark-complete4").src = changePic(imgSrc);	
+}
+document.getElementById("btn5").onclick = function() {
+  var imgSrc=document.getElementById("mark-complete5").src;
+  document.getElementById("mark-complete5").src = changePic(imgSrc);	
+}
+document.getElementById("btn6").onclick = function() {
+  var imgSrc=document.getElementById("mark-complete6").src;
+  document.getElementById("mark-complete6").src = changePic(imgSrc);	
+}
+document.getElementById("btn7").onclick = function() {
+  var imgSrc=document.getElementById("mark-complete7").src;
+  document.getElementById("mark-complete7").src = changePic(imgSrc);	
+}
+document.getElementById("btn8").onclick = function() {
+  var imgSrc=document.getElementById("mark-complete8").src;
+  document.getElementById("mark-complete8").src = changePic(imgSrc);	
+}
+document.getElementById("btn9").onclick = function() {
+  var imgSrc=document.getElementById("mark-complete9").src;
+  document.getElementById("mark-complete9").src = changePic(imgSrc);	
+}						    
+						    
+    $("#pg1 input").on('change', function(){
         if ($("#pg1 input").is(":checked") === true) {
         progress = progress+10;
         $('#blips > .xp-progress').attr("style","width:" + progress + "%");
@@ -1162,7 +1194,105 @@ document.getElementById("btn").onclick = function() {
          $('.nf-info-xp').text(progress + "/100");
         }
     });
-});			
+	
+   $("#pg2 input").on('change', function(){
+        if ($("#pg2 input").is(":checked") === true) {
+        progress = progress+10;
+        $('#blips > .xp-progress').attr("style","width:" + progress + "%");
+        $('.nf-info-xp').text(progress + "/100");
+        }
+        else if ($("#pg2 input").is(":checked") === false) {
+        progress = progress-10;
+        $('#blips > .xp-progress').attr("style","width:" + progress + "%");
+         $('.nf-info-xp').text(progress + "/100");
+        }
+    });
+    
+     $("#pg3 input").on('change', function(){
+        if ($("#pg3 input").is(":checked") === true) {
+        progress = progress+10;
+        $('#blips > .xp-progress').attr("style","width:" + progress + "%");
+         $('.nf-info-xp').text(progress + "/100");
+        }
+        else if ($("#pg3 input").is(":checked") === false) {
+        progress = progress-10;
+        $('#blips > .xp-progress').attr("style","width:" + progress + "%");
+        $('.nf-info-xp').text(progress + "/100");
+        }
+    });
+ $("#pg4 input").on('change', function(){
+        if ($("#pg4 input").is(":checked") === true) {
+        progress = progress+10;
+        $('#blips > .xp-progress').attr("style","width:" + progress + "%");
+         $('.nf-info-xp').text(progress + "/100");
+        }
+        else if ($("#pg4 input").is(":checked") === false) {
+        progress = progress-10;
+        $('#blips > .xp-progress').attr("style","width:" + progress + "%");
+         $('.nf-info-xp').text(progress + "/100");
+        }
+    });
+			
+ $("#pg5 input").on('change', function(){
+        if ($("#pg5 input").is(":checked") === true) {
+        progress = progress+10;
+        $('#blips > .xp-progress').attr("style","width:" + progress + "%");
+	$('.nf-info-xp').text(progress + "/100");
+        }
+        else if ($("#pg5 input").is(":checked") === false) {
+        progress = progress-10;
+        $('#blips > .xp-progress').attr("style","width:" + progress + "%");
+	$('.nf-info-xp').text(progress + "/100");		
+        }
+    });
+$("#pg6 input").on('change', function(){
+        if ($("#pg6 input").is(":checked") === true) {
+        progress = progress+10;
+        $('#blips > .xp-progress').attr("style","width:" + progress + "%");
+	$('.nf-info-xp').text(progress + "/100");		
+        }
+        else if ($("#pg6 input").is(":checked") === false) {
+        progress = progress-10;
+        $('#blips > .xp-progress').attr("style","width:" + progress + "%");
+      $('.nf-info-xp').text(progress + "/100");
+	}
+    });
+ $("#pg7 input").on('change', function(){
+        if ($("#pg7 input").is(":checked") === true) {
+        progress = progress+10;
+        $('#blips > .xp-progress').attr("style","width:" + progress + "%");
+       $('.nf-info-xp').text(progress + "/100");        }
+        else if ($("#pg7 input").is(":checked") === false) {
+        progress = progress-10;
+        $('#blips > .xp-progress').attr("style","width:" + progress + "%");
+	$('.nf-info-xp').text(progress + "/100");
+        }
+    });
+ $("#pg8 input").on('change', function(){
+        if ($("#pg8 input").is(":checked") === true) {
+        progress = progress+10;
+        $('#blips > .xp-progress').attr("style","width:" + progress + "%");
+       $('.nf-info-xp').text(progress + "/100");			
+        }
+        else if ($("#pg8 input").is(":checked") === false) {
+        progress = progress-10;
+        $('#blips > .xp-progress').attr("style","width:" + progress + "%");
+       $('.nf-info-xp').text(progress + "/100");			
+        }
+    });
+ $("#pg9 input").on('change', function(){
+        if ($("#pg9 input").is(":checked") === true) {
+        progress = progress+10;
+        $('#blips > .xp-progress').attr("style","width:" + progress + "%");
+       $('.nf-info-xp').text(progress + "/100");			
+        }
+        else if ($("#pg9 input").is(":checked") === false) {
+        progress = progress-10;
+        $('#blips > .xp-progress').attr("style","width:" + progress + "%");
+       $('.nf-info-xp').text(progress + "/100");			
+        }
+    });
+});						    						    
 </script>
 
 <script type="text/javascript" src="https://a.optmnstr.com/app/js/api.min.js" data-campaign="jo8gkjx4yq069i2sb0ec" data-user="47412" data-env="production"></script><script type="text/javascript" src="https://a.optmnstr.com/app/js/api.min.js" data-campaign="uvmeftupxwbsxx5bfali" data-user="47412" data-env="production"></script><script type="text/javascript" src="https://a.optmnstr.com/app/js/api.min.js" data-campaign="yqng8mb9dyag2looo577" data-user="47412" data-env="production"></script><script type="text/javascript" src="https://a.optmnstr.com/app/js/api.min.js" data-campaign="nolrux7pvqswvgjeoc3e" data-user="47412" data-env="production"></script><script type="text/javascript" src="https://a.optmnstr.com/app/js/api.min.js" data-campaign="ahwuiqmvskpchmx6sih7" data-user="47412" data-env="production"></script><script type="text/javascript" src="https://a.optmnstr.com/app/js/api.min.js" data-campaign="yvw0hpb6dzhy5sj8ctic" data-user="47412" data-env="production"></script><script type="text/javascript" src="https://a.optmnstr.com/app/js/api.min.js" data-campaign="osl7frtsrjl1quzwrpa9" data-user="47412" data-env="production"></script><script type="text/javascript" src="https://a.optmnstr.com/app/js/api.min.js" data-campaign="ucx50wrmz7nlszvwm4eh" data-user="47412" data-env="production"></script> <script type="text/javascript">
