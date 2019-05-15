@@ -3363,7 +3363,7 @@ $(document).ready(function($){
 var level = 1;
   var timer = setInterval(function() {
     if (progress === (level * 60)) {
-    level++; $('.level').html("Level "+ level);
+    level++; $('.level').html(level);
      Swal.fire('Congratualation, You are in the next level')
     }  
   }, 100);
