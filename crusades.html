@@ -3360,7 +3360,14 @@ $(document).ready(function($){
   var progress = 10;    
   var notcomplete = "https://mooehkalu.github.io/Maximize-Colosseum/images/crusades-mark/Mark-Not-Complete.png";
   var completed = "https://mooehkalu.github.io/Maximize-Colosseum/images/crusades-mark/Mark-Completed.png";		    
-
+var level = 1;
+  var timer = setInterval(function() {
+    if (progress === (level * 60)) {
+    level++; $('.level').html("Level "+ level);
+     Swal.fire('Congratualation, You are in the next level')
+    }  
+  }, 100);
+							   
   function changePic(source) {
     if (source == notcomplete) {
       return completed;
